@@ -6,6 +6,7 @@ import { useCart } from "@/components/cart-context";
 import Image from "next/image";
 import { useState } from "react";
 import { X } from "lucide-react";
+import hotIds from "@/menuitems/hot.json";
 
 export default function HotPage() {
   const { addItem } = useCart();
@@ -13,7 +14,8 @@ export default function HotPage() {
   const [selectedSize, setSelectedSize] = useState<string>("normal");
   const [note, setNote] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const hotItems = menuItems.filter((i) => i.hot);
+  const hotSet = new Set((hotIds as string[]) || []);
+  const hotItems = menuItems.filter((i) => hotSet.has(i.id));
 
   const openItem = (item: MenuItem) => {
     setSelectedItem(item);

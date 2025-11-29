@@ -6,7 +6,7 @@ import { useCart } from "@/components/cart-context";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import type { LucideIcon } from "lucide-react";
-import { ArrowLeft, CupSoda, Gift, Utensils, X } from "lucide-react";
+import { ArrowLeft, CupSoda, IceCream, Utensils, X } from "lucide-react";
 import categoriesData from "@/menuitems/categories.json";
 
 const tabs: {
@@ -16,7 +16,7 @@ const tabs: {
 }[] = [
   { id: "drink", label: "Drinks", icon: CupSoda },
   { id: "food", label: "Food", icon: Utensils },
-  { id: "other", label: "Starters & Desserts", icon: Gift },
+  { id: "other", label: "Starters & Desserts", icon: IceCream },
 ];
 
 export default function HomePage() {

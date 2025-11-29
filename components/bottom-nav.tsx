@@ -7,14 +7,13 @@ import Image from "next/image";
 type NavItem = {
   href: string;
   label: string;
-  name: "home" | "bot" | "hot" | "basket" | "profile";
+  name: "home" | "bot" | "hot" | "profile";
 };
 
 const items: NavItem[] = [
   { href: "/", label: "Home", name: "home" },
   { href: "/chatbot", label: "Chat bot", name: "bot" },
   { href: "/hot", label: "Hot", name: "hot" },
-  { href: "/basket", label: "Basket", name: "basket" },
   { href: "/profile", label: "Profile", name: "profile" },
 ];
 
@@ -33,10 +32,6 @@ const ICON_PATHS: Record<
   hot: {
     active: "/icons/bold/heart.svg",
     inactive: "/icons/outline/heart.svg",
-  },
-  basket: {
-    active: "/icons/bold/bag-happy.svg",
-    inactive: "/icons/outline/bag-happy.svg",
   },
   profile: {
     active: "/icons/bold/frame.svg",

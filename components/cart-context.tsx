@@ -11,10 +11,13 @@ export type CartItem = {
 
 type CartContextType = {
   items: CartItem[];
+  orderedItems: CartItem[];
   addItem: (item: Omit<CartItem, "quantity">) => void;
   removeItem: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
+  placeOrder: () => void;
+  clearOrders: () => void;
   total: number;
 };
 
@@ -22,6 +25,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
+  const [orderedItems, setOrderedItems] = useState<CartItem[]>([]);
 
   const addItem = (item: Omit<CartItem, "quantity">) => {
     setItems((prev) => {
@@ -49,6 +53,14 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const clearCart = () => setItems([]);
 
+  const placeOrder = () => {
+    if (items.length === 0) return;
+    setOrderedItems((prev) => [...prev, ...items]);
+    setItems([]);
+  };
+
+  const clearOrders = () => setOrderedItems([]);
+
   const total = useMemo(
     () => items.reduce((sum, i) => sum + i.price * i.quantity, 0),
     [items]
@@ -56,10 +68,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const value: CartContextType = {
     items,
+    orderedItems,
     addItem,
     removeItem,
     updateQuantity,
     clearCart,
+    placeOrder,
+    clearOrders,
     total,
   };
 
