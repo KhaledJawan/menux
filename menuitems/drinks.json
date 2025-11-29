@@ -1,93 +1,1487 @@
 [
-  { "id": "mineralwasser-still", "name": "Mineralwasser (still)", "description": "Still mineral water, 0.5L", "hiddenDescription": "Pure spring water, no carbonation.", "price": 2.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "mineralwasser-sprudel", "name": "Mineralwasser (sprudelnd)", "description": "Sparkling mineral water, 0.5L", "hiddenDescription": "Lightly carbonated.", "price": 2.7, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "cola", "name": "Cola", "description": "Classic cola, ice cold", "hiddenDescription": "Balanced sweetness and fizz.", "price": 3.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "cola-zero", "name": "Cola Zero", "description": "Sugar-free cola, ice cold", "hiddenDescription": "Zero sugar, full taste.", "price": 3.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.4, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "fanta", "name": "Fanta", "description": "Orange soda, chilled", "hiddenDescription": "Bright and citrusy.", "price": 3.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.3, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "sprite", "name": "Sprite", "description": "Lemon-lime soda", "hiddenDescription": "Refreshing citrus sparkle.", "price": 3.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.3, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "spezi", "name": "Spezi", "description": "Cola + orange mix", "hiddenDescription": "Classic German cola-orange blend.", "price": 3.2, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.4, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "eistee-zitrone", "name": "Eistee Zitrone", "description": "Iced tea lemon", "hiddenDescription": "Chilled black tea with lemon.", "price": 3.2, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.2, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "eistee-pfirsich", "name": "Eistee Pfirsich", "description": "Iced tea peach", "hiddenDescription": "Juicy peach flavor.", "price": 3.2, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.2, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "apfelschorle", "name": "Apfelschorle", "description": "Apple + sparkling water", "hiddenDescription": "Crisp apple spritzer.", "price": 3.4, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "orangensaft", "name": "Orangensaft", "description": "Fresh orange juice", "hiddenDescription": "Sunny and citrusy.", "price": 3.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "apfelsaft", "name": "Apfelsaft", "description": "Apple juice", "hiddenDescription": "Naturally sweet.", "price": 3.3, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.4, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "traubensaft", "name": "Traubensaft", "description": "Grape juice", "hiddenDescription": "Rich and fruity.", "price": 3.5, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.3, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "multivitaminsaft", "name": "Multivitaminsaft", "description": "Mixed fruit juice", "hiddenDescription": "Blend of seasonal fruits.", "price": 3.6, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.3, "categories": ["cold-drinks", "non-alcoholic"] },
-  { "id": "energy-drink", "name": "Energy Drink", "description": "Taurine & caffeine boost", "hiddenDescription": "Chilled can.", "price": 3.8, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.1, "categories": ["cold-drinks", "non-alcoholic"] },
-
-  { "id": "kaffee", "name": "Kaffee", "description": "Filter coffee", "hiddenDescription": "Mild roast.", "price": 3.0, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.6, "categories": ["hot-drinks"] },
-  { "id": "espresso", "name": "Espresso", "description": "Single shot espresso", "hiddenDescription": "Short and intense.", "price": 2.4, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.7, "categories": ["hot-drinks"] },
-  { "id": "double-espresso", "name": "Doppelter Espresso", "description": "Double espresso", "hiddenDescription": "Twice the punch.", "price": 3.2, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.7, "categories": ["hot-drinks"] },
-  { "id": "cappuccino", "name": "Cappuccino", "description": "Espresso, milk foam", "hiddenDescription": "Balanced and creamy.", "price": 3.6, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.8, "categories": ["hot-drinks"] },
-  { "id": "latte-macchiato", "name": "Latte Macchiato", "description": "Layered espresso & milk", "hiddenDescription": "Tall and smooth.", "price": 3.9, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.8, "categories": ["hot-drinks"] },
-  { "id": "milchkaffee", "name": "Milchkaffee", "description": "Coffee with hot milk", "hiddenDescription": "Comfort classic.", "price": 3.5, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.6, "categories": ["hot-drinks"] },
-  { "id": "kakao", "name": "Kakao / Heiße Schokolade", "description": "Hot chocolate", "hiddenDescription": "Rich cocoa with milk.", "price": 3.4, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.5, "categories": ["hot-drinks", "non-alcoholic"] },
-  { "id": "tee-schwarz", "name": "Tee Schwarz", "description": "Black tea", "hiddenDescription": "Classic breakfast tea.", "price": 2.8, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.3, "categories": ["hot-drinks"] },
-  { "id": "tee-gruen", "name": "Tee Grün", "description": "Green tea", "hiddenDescription": "Light and fresh.", "price": 2.9, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.3, "categories": ["hot-drinks"] },
-  { "id": "kraeutertee", "name": "Kräutertee", "description": "Herbal tea", "hiddenDescription": "Caffeine-free herbal blend.", "price": 2.9, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.4, "categories": ["hot-drinks"] },
-  { "id": "pfefferminztee", "name": "Pfefferminztee", "description": "Mint tea", "hiddenDescription": "Cooling peppermint.", "price": 2.9, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.4, "categories": ["hot-drinks"] },
-  { "id": "ingwertee", "name": "Ingwertee", "description": "Ginger tea", "hiddenDescription": "Spicy-smooth infusion.", "price": 3.0, "photos": ["/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"], "rate": 4.4, "categories": ["hot-drinks"] },
-
-  { "id": "alkoholfreies-bier", "name": "Alkoholfreies Bier", "description": "Non-alcoholic beer", "hiddenDescription": "Crisp and 0.0%.", "price": 3.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.2, "categories": ["non-alcoholic", "cold-drinks"] },
-  { "id": "malzbier", "name": "Malzbier", "description": "Malt drink", "hiddenDescription": "Sweet, malty, no alcohol.", "price": 3.2, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.1, "categories": ["non-alcoholic", "cold-drinks"] },
-  { "id": "fruechte-schorle", "name": "Früchte-Schorlen", "description": "Fruit spritzers", "hiddenDescription": "Apple, currant, mango blends.", "price": 3.4, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.3, "categories": ["non-alcoholic", "cold-drinks"] },
-  { "id": "hausgemachte-limonade", "name": "Hausgemachte Limonade", "description": "House lemonade", "hiddenDescription": "Fresh citrus, lightly sweetened.", "price": 3.6, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["non-alcoholic", "cold-drinks"] },
-  { "id": "ginger-ale", "name": "Ginger Ale", "description": "Ginger soda", "hiddenDescription": "Zesty and bubbly.", "price": 3.2, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.2, "categories": ["non-alcoholic", "cold-drinks"] },
-  { "id": "bitter-lemon", "name": "Bitter Lemon", "description": "Tart lemon soda", "hiddenDescription": "Quinine bite.", "price": 3.2, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.1, "categories": ["non-alcoholic", "cold-drinks"] },
-  { "id": "tonic-water", "name": "Tonic Water", "description": "Classic tonic", "hiddenDescription": "For mixing or solo.", "price": 3.2, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.1, "categories": ["non-alcoholic", "cold-drinks"] },
-
-  { "id": "pils", "name": "Pils", "description": "Draft Pils beer", "hiddenDescription": "Crisp, hoppy.", "price": 4.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.7, "categories": ["beer-draft"] },
-  { "id": "helles", "name": "Helles", "description": "Draft lager", "hiddenDescription": "Smooth, golden.", "price": 4.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["beer-draft"] },
-  { "id": "weissbier", "name": "Weißbier / Weizenbier", "description": "Draft wheat beer", "hiddenDescription": "Fruity, cloudy.", "price": 4.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.8, "categories": ["beer-draft"] },
-  { "id": "koelsch", "name": "Kölsch", "description": "Draft kölsch", "hiddenDescription": "Light, top-fermented.", "price": 4.6, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.5, "categories": ["beer-draft"] },
-  { "id": "altbier", "name": "Altbier", "description": "Dark ale", "hiddenDescription": "Rich and malty.", "price": 4.6, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.4, "categories": ["beer-draft"] },
-  { "id": "dunkles", "name": "Dunkles Bier", "description": "Dark lager", "hiddenDescription": "Toasty malt notes.", "price": 4.7, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.5, "categories": ["beer-draft"] },
-
-  { "id": "becks", "name": "Beck’s", "description": "Bottled beer", "hiddenDescription": "Crisp German lager.", "price": 3.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.3, "categories": ["beer-bottle"] },
-  { "id": "bitburger", "name": "Bitburger", "description": "Bottled beer", "hiddenDescription": "Classic pils.", "price": 3.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.3, "categories": ["beer-bottle"] },
-  { "id": "krombacher", "name": "Krombacher", "description": "Bottled beer", "hiddenDescription": "Balanced lager.", "price": 3.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.3, "categories": ["beer-bottle"] },
-  { "id": "erdinger", "name": "Erdinger", "description": "Bottled wheat beer", "hiddenDescription": "Smooth and yeasty.", "price": 4.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.4, "categories": ["beer-bottle"] },
-  { "id": "paulaner", "name": "Paulaner", "description": "Bottled wheat beer", "hiddenDescription": "Classic Munich brew.", "price": 4.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.4, "categories": ["beer-bottle"] },
-  { "id": "jever", "name": "Jever", "description": "Bottled pils", "hiddenDescription": "Dry, hoppy.", "price": 3.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.2, "categories": ["beer-bottle"] },
-  { "id": "oettinger", "name": "Oettinger", "description": "Bottled beer", "hiddenDescription": "Everyday lager.", "price": 3.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.0, "categories": ["beer-bottle"] },
-
-  { "id": "radler", "name": "Radler", "description": "Beer + lemon soda", "hiddenDescription": "Refreshing shandy.", "price": 4.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.5, "categories": ["beer-special", "non-alcoholic"] },
-  { "id": "diesel", "name": "Diesel", "description": "Beer + cola", "hiddenDescription": "Dark shandy mix.", "price": 4.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.3, "categories": ["beer-special"] },
-  { "id": "weizenbock", "name": "Weizenbock", "description": "Strong wheat beer", "hiddenDescription": "Malty and robust.", "price": 4.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["beer-special"] },
-  { "id": "schwarzbier", "name": "Schwarzbier", "description": "Black lager", "hiddenDescription": "Roasty, smooth.", "price": 4.6, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.5, "categories": ["beer-special"] },
-
-  { "id": "riesling", "name": "Riesling", "description": "Dry white wine", "hiddenDescription": "Crisp acidity.", "price": 5.5, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["wine-white"] },
-  { "id": "grauburgunder", "name": "Grauburgunder", "description": "Pinot gris", "hiddenDescription": "Pear and melon notes.", "price": 5.8, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["wine-white"] },
-  { "id": "weissburgunder", "name": "Weißburgunder", "description": "Pinot blanc", "hiddenDescription": "Stone fruit aroma.", "price": 5.6, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["wine-white"] },
-  { "id": "silvaner", "name": "Silvaner", "description": "Herbal white", "hiddenDescription": "Fresh and mineral.", "price": 5.4, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.4, "categories": ["wine-white"] },
-  { "id": "chardonnay", "name": "Chardonnay", "description": "Rounded white", "hiddenDescription": "Apple and vanilla hints.", "price": 6.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["wine-white"] },
-
-  { "id": "spaetburgunder", "name": "Spätburgunder", "description": "Pinot noir", "hiddenDescription": "Red berries, light tannin.", "price": 6.2, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["wine-red"] },
-  { "id": "dornfelder", "name": "Dornfelder", "description": "German red", "hiddenDescription": "Juicy, deep color.", "price": 5.8, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["wine-red"] },
-  { "id": "merlot", "name": "Merlot", "description": "Soft red wine", "hiddenDescription": "Plum and cocoa.", "price": 6.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["wine-red"] },
-  { "id": "cabernet", "name": "Cabernet Sauvignon", "description": "Bold red", "hiddenDescription": "Dark fruit, spice.", "price": 6.4, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["wine-red"] },
-  { "id": "rose", "name": "Rosé Cuvée", "description": "Dry rosé", "hiddenDescription": "Berry and floral.", "price": 5.8, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["wine-rose"] },
-
-  { "id": "sekt", "name": "Sekt", "description": "German sparkling wine", "hiddenDescription": "Brut style.", "price": 5.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.4, "categories": ["sparkling-aperitif"] },
-  { "id": "prosecco", "name": "Prosecco", "description": "Italian bubbly", "hiddenDescription": "Light and crisp.", "price": 5.8, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["sparkling-aperitif"] },
-  { "id": "aperol-spritz", "name": "Aperol Spritz", "description": "Aperol, prosecco, soda", "hiddenDescription": "Bitter-sweet orange.", "price": 7.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.7, "categories": ["sparkling-aperitif", "cocktails"] },
-  { "id": "hugo", "name": "Hugo", "description": "Elderflower spritz", "hiddenDescription": "Mint and lime.", "price": 7.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["sparkling-aperitif", "cocktails"] },
-  { "id": "campari-soda", "name": "Campari Soda", "description": "Campari with soda", "hiddenDescription": "Bitter, refreshing.", "price": 7.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.4, "categories": ["sparkling-aperitif"] },
-
-  { "id": "vodka", "name": "Vodka", "description": "Premium vodka shot", "hiddenDescription": "Chilled.", "price": 4.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["spirits"] },
-  { "id": "rum", "name": "Rum", "description": "Dark or white rum", "hiddenDescription": "Smooth molasses base.", "price": 4.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.4, "categories": ["spirits"] },
-  { "id": "gin", "name": "Gin", "description": "London dry gin", "hiddenDescription": "Juniper-forward.", "price": 4.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["spirits"] },
-  { "id": "whiskey", "name": "Whiskey", "description": "Smooth whiskey", "hiddenDescription": "Vanilla and oak.", "price": 4.5, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["spirits"] },
-  { "id": "tequila", "name": "Tequila", "description": "Agave spirit", "hiddenDescription": "Blanco shot.", "price": 4.2, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.3, "categories": ["spirits"] },
-  { "id": "jaegermeister", "name": "Jägermeister", "description": "Herbal liqueur", "hiddenDescription": "Serve ice-cold.", "price": 4.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.4, "categories": ["spirits"] },
-  { "id": "obstler", "name": "Obstler", "description": "Fruit brandy", "hiddenDescription": "Apple/pear schnaps.", "price": 4.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.2, "categories": ["spirits"] },
-
-  { "id": "mojito", "name": "Mojito", "description": "Rum, mint, lime", "hiddenDescription": "Cuban classic.", "price": 8.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.8, "categories": ["cocktails"] },
-  { "id": "caipirinha", "name": "Caipirinha", "description": "Cachaça, lime, sugar", "hiddenDescription": "Brazilian favorite.", "price": 8.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.7, "categories": ["cocktails"] },
-  { "id": "sex-on-the-beach", "name": "Sex on the Beach", "description": "Vodka, peach, cranberry", "hiddenDescription": "Fruity long drink.", "price": 8.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.7, "categories": ["cocktails"] },
-  { "id": "pina-colada", "name": "Piña Colada", "description": "Rum, coconut, pineapple", "hiddenDescription": "Creamy tropical.", "price": 8.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.8, "categories": ["cocktails"] },
-  { "id": "gin-tonic", "name": "Gin Tonic", "description": "Gin with tonic water", "hiddenDescription": "Citrus garnish.", "price": 8.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.7, "categories": ["cocktails", "spirits"] },
-  { "id": "tequila-sunrise", "name": "Tequila Sunrise", "description": "Tequila, orange, grenadine", "hiddenDescription": "Sunset layers.", "price": 8.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["cocktails"] },
-  { "id": "mai-tai", "name": "Mai Tai", "description": "Rum, lime, almond", "hiddenDescription": "Tiki classic.", "price": 8.8, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.7, "categories": ["cocktails"] },
-  { "id": "margarita", "name": "Margarita", "description": "Tequila, lime, triple sec", "hiddenDescription": "Salt rim optional.", "price": 8.8, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.8, "categories": ["cocktails"] }
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mineralwasser-still",
+    "name": "Mineralwasser (still)",
+    "description": "Still mineral water, 0.5L",
+    "hiddenDescription": "Pure spring water, no carbonation.",
+    "price": 2.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mineralwasser-sprudel",
+    "name": "Mineralwasser (sprudelnd)",
+    "description": "Sparkling mineral water, 0.5L",
+    "hiddenDescription": "Lightly carbonated.",
+    "price": 2.7,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "cola",
+    "name": "Cola",
+    "description": "Classic cola, ice cold",
+    "hiddenDescription": "Balanced sweetness and fizz.",
+    "price": 3,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "cola-zero",
+    "name": "Cola Zero",
+    "description": "Sugar-free cola, ice cold",
+    "hiddenDescription": "Zero sugar, full taste.",
+    "price": 3,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "fanta",
+    "name": "Fanta",
+    "description": "Orange soda, chilled",
+    "hiddenDescription": "Bright and citrusy.",
+    "price": 3,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "sprite",
+    "name": "Sprite",
+    "description": "Lemon-lime soda",
+    "hiddenDescription": "Refreshing citrus sparkle.",
+    "price": 3,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "spezi",
+    "name": "Spezi",
+    "description": "Cola + orange mix",
+    "hiddenDescription": "Classic German cola-orange blend.",
+    "price": 3.2,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "eistee-zitrone",
+    "name": "Eistee Zitrone",
+    "description": "Iced tea lemon",
+    "hiddenDescription": "Chilled black tea with lemon.",
+    "price": 3.2,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.2,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "eistee-pfirsich",
+    "name": "Eistee Pfirsich",
+    "description": "Iced tea peach",
+    "hiddenDescription": "Juicy peach flavor.",
+    "price": 3.2,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.2,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "apfelschorle",
+    "name": "Apfelschorle",
+    "description": "Apple + sparkling water",
+    "hiddenDescription": "Crisp apple spritzer.",
+    "price": 3.4,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "orangensaft",
+    "name": "Orangensaft",
+    "description": "Fresh orange juice",
+    "hiddenDescription": "Sunny and citrusy.",
+    "price": 3.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "apfelsaft",
+    "name": "Apfelsaft",
+    "description": "Apple juice",
+    "hiddenDescription": "Naturally sweet.",
+    "price": 3.3,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "traubensaft",
+    "name": "Traubensaft",
+    "description": "Grape juice",
+    "hiddenDescription": "Rich and fruity.",
+    "price": 3.5,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "multivitaminsaft",
+    "name": "Multivitaminsaft",
+    "description": "Mixed fruit juice",
+    "hiddenDescription": "Blend of seasonal fruits.",
+    "price": 3.6,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "energy-drink",
+    "name": "Energy Drink",
+    "description": "Taurine & caffeine boost",
+    "hiddenDescription": "Chilled can.",
+    "price": 3.8,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.1,
+    "categories": [
+      "cold-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kaffee",
+    "name": "Kaffee",
+    "description": "Filter coffee",
+    "hiddenDescription": "Mild roast.",
+    "price": 3,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "espresso",
+    "name": "Espresso",
+    "description": "Single shot espresso",
+    "hiddenDescription": "Short and intense.",
+    "price": 2.4,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "double-espresso",
+    "name": "Doppelter Espresso",
+    "description": "Double espresso",
+    "hiddenDescription": "Twice the punch.",
+    "price": 3.2,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "cappuccino",
+    "name": "Cappuccino",
+    "description": "Espresso, milk foam",
+    "hiddenDescription": "Balanced and creamy.",
+    "price": 3.6,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "latte-macchiato",
+    "name": "Latte Macchiato",
+    "description": "Layered espresso & milk",
+    "hiddenDescription": "Tall and smooth.",
+    "price": 3.9,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "milchkaffee",
+    "name": "Milchkaffee",
+    "description": "Coffee with hot milk",
+    "hiddenDescription": "Comfort classic.",
+    "price": 3.5,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kakao",
+    "name": "Kakao / Heiße Schokolade",
+    "description": "Hot chocolate",
+    "hiddenDescription": "Rich cocoa with milk.",
+    "price": 3.4,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "hot-drinks",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tee-schwarz",
+    "name": "Tee Schwarz",
+    "description": "Black tea",
+    "hiddenDescription": "Classic breakfast tea.",
+    "price": 2.8,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tee-gruen",
+    "name": "Tee Grün",
+    "description": "Green tea",
+    "hiddenDescription": "Light and fresh.",
+    "price": 2.9,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kraeutertee",
+    "name": "Kräutertee",
+    "description": "Herbal tea",
+    "hiddenDescription": "Caffeine-free herbal blend.",
+    "price": 2.9,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pfefferminztee",
+    "name": "Pfefferminztee",
+    "description": "Mint tea",
+    "hiddenDescription": "Cooling peppermint.",
+    "price": 2.9,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "ingwertee",
+    "name": "Ingwertee",
+    "description": "Ginger tea",
+    "hiddenDescription": "Spicy-smooth infusion.",
+    "price": 3,
+    "photos": [
+      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "hot-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "alkoholfreies-bier",
+    "name": "Alkoholfreies Bier",
+    "description": "Non-alcoholic beer",
+    "hiddenDescription": "Crisp and 0.0%.",
+    "price": 3.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.2,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "malzbier",
+    "name": "Malzbier",
+    "description": "Malt drink",
+    "hiddenDescription": "Sweet, malty, no alcohol.",
+    "price": 3.2,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.1,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "fruechte-schorle",
+    "name": "Früchte-Schorlen",
+    "description": "Fruit spritzers",
+    "hiddenDescription": "Apple, currant, mango blends.",
+    "price": 3.4,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "hausgemachte-limonade",
+    "name": "Hausgemachte Limonade",
+    "description": "House lemonade",
+    "hiddenDescription": "Fresh citrus, lightly sweetened.",
+    "price": 3.6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "ginger-ale",
+    "name": "Ginger Ale",
+    "description": "Ginger soda",
+    "hiddenDescription": "Zesty and bubbly.",
+    "price": 3.2,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.2,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bitter-lemon",
+    "name": "Bitter Lemon",
+    "description": "Tart lemon soda",
+    "hiddenDescription": "Quinine bite.",
+    "price": 3.2,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.1,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tonic-water",
+    "name": "Tonic Water",
+    "description": "Classic tonic",
+    "hiddenDescription": "For mixing or solo.",
+    "price": 3.2,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.1,
+    "categories": [
+      "non-alcoholic",
+      "cold-drinks"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pils",
+    "name": "Pils",
+    "description": "Draft Pils beer",
+    "hiddenDescription": "Crisp, hoppy.",
+    "price": 4.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "beer-draft"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "helles",
+    "name": "Helles",
+    "description": "Draft lager",
+    "hiddenDescription": "Smooth, golden.",
+    "price": 4.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "beer-draft"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "weissbier",
+    "name": "Weißbier / Weizenbier",
+    "description": "Draft wheat beer",
+    "hiddenDescription": "Fruity, cloudy.",
+    "price": 4.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "beer-draft"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "koelsch",
+    "name": "Kölsch",
+    "description": "Draft kölsch",
+    "hiddenDescription": "Light, top-fermented.",
+    "price": 4.6,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "beer-draft"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "altbier",
+    "name": "Altbier",
+    "description": "Dark ale",
+    "hiddenDescription": "Rich and malty.",
+    "price": 4.6,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "beer-draft"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "dunkles",
+    "name": "Dunkles Bier",
+    "description": "Dark lager",
+    "hiddenDescription": "Toasty malt notes.",
+    "price": 4.7,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "beer-draft"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "becks",
+    "name": "Beck’s",
+    "description": "Bottled beer",
+    "hiddenDescription": "Crisp German lager.",
+    "price": 3.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bitburger",
+    "name": "Bitburger",
+    "description": "Bottled beer",
+    "hiddenDescription": "Classic pils.",
+    "price": 3.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "krombacher",
+    "name": "Krombacher",
+    "description": "Bottled beer",
+    "hiddenDescription": "Balanced lager.",
+    "price": 3.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "erdinger",
+    "name": "Erdinger",
+    "description": "Bottled wheat beer",
+    "hiddenDescription": "Smooth and yeasty.",
+    "price": 4,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "paulaner",
+    "name": "Paulaner",
+    "description": "Bottled wheat beer",
+    "hiddenDescription": "Classic Munich brew.",
+    "price": 4,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "jever",
+    "name": "Jever",
+    "description": "Bottled pils",
+    "hiddenDescription": "Dry, hoppy.",
+    "price": 3.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.2,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "oettinger",
+    "name": "Oettinger",
+    "description": "Bottled beer",
+    "hiddenDescription": "Everyday lager.",
+    "price": 3.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4,
+    "categories": [
+      "beer-bottle"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "radler",
+    "name": "Radler",
+    "description": "Beer + lemon soda",
+    "hiddenDescription": "Refreshing shandy.",
+    "price": 4,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "beer-special",
+      "non-alcoholic"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "diesel",
+    "name": "Diesel",
+    "description": "Beer + cola",
+    "hiddenDescription": "Dark shandy mix.",
+    "price": 4,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "beer-special"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "weizenbock",
+    "name": "Weizenbock",
+    "description": "Strong wheat beer",
+    "hiddenDescription": "Malty and robust.",
+    "price": 4.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "beer-special"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "schwarzbier",
+    "name": "Schwarzbier",
+    "description": "Black lager",
+    "hiddenDescription": "Roasty, smooth.",
+    "price": 4.6,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "beer-special"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "riesling",
+    "name": "Riesling",
+    "description": "Dry white wine",
+    "hiddenDescription": "Crisp acidity.",
+    "price": 5.5,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "wine-white"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "grauburgunder",
+    "name": "Grauburgunder",
+    "description": "Pinot gris",
+    "hiddenDescription": "Pear and melon notes.",
+    "price": 5.8,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "wine-white"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "weissburgunder",
+    "name": "Weißburgunder",
+    "description": "Pinot blanc",
+    "hiddenDescription": "Stone fruit aroma.",
+    "price": 5.6,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "wine-white"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "silvaner",
+    "name": "Silvaner",
+    "description": "Herbal white",
+    "hiddenDescription": "Fresh and mineral.",
+    "price": 5.4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "wine-white"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "chardonnay",
+    "name": "Chardonnay",
+    "description": "Rounded white",
+    "hiddenDescription": "Apple and vanilla hints.",
+    "price": 6,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "wine-white"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "spaetburgunder",
+    "name": "Spätburgunder",
+    "description": "Pinot noir",
+    "hiddenDescription": "Red berries, light tannin.",
+    "price": 6.2,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "wine-red"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "dornfelder",
+    "name": "Dornfelder",
+    "description": "German red",
+    "hiddenDescription": "Juicy, deep color.",
+    "price": 5.8,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "wine-red"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "merlot",
+    "name": "Merlot",
+    "description": "Soft red wine",
+    "hiddenDescription": "Plum and cocoa.",
+    "price": 6,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "wine-red"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "cabernet",
+    "name": "Cabernet Sauvignon",
+    "description": "Bold red",
+    "hiddenDescription": "Dark fruit, spice.",
+    "price": 6.4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "wine-red"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "rose",
+    "name": "Rosé Cuvée",
+    "description": "Dry rosé",
+    "hiddenDescription": "Berry and floral.",
+    "price": 5.8,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "wine-rose"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "sekt",
+    "name": "Sekt",
+    "description": "German sparkling wine",
+    "hiddenDescription": "Brut style.",
+    "price": 5.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "sparkling-aperitif"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "prosecco",
+    "name": "Prosecco",
+    "description": "Italian bubbly",
+    "hiddenDescription": "Light and crisp.",
+    "price": 5.8,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "sparkling-aperitif"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "aperol-spritz",
+    "name": "Aperol Spritz",
+    "description": "Aperol, prosecco, soda",
+    "hiddenDescription": "Bitter-sweet orange.",
+    "price": 7.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "sparkling-aperitif",
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "hugo",
+    "name": "Hugo",
+    "description": "Elderflower spritz",
+    "hiddenDescription": "Mint and lime.",
+    "price": 7,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "sparkling-aperitif",
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "campari-soda",
+    "name": "Campari Soda",
+    "description": "Campari with soda",
+    "hiddenDescription": "Bitter, refreshing.",
+    "price": 7,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "sparkling-aperitif"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "vodka",
+    "name": "Vodka",
+    "description": "Premium vodka shot",
+    "hiddenDescription": "Chilled.",
+    "price": 4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "rum",
+    "name": "Rum",
+    "description": "Dark or white rum",
+    "hiddenDescription": "Smooth molasses base.",
+    "price": 4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gin",
+    "name": "Gin",
+    "description": "London dry gin",
+    "hiddenDescription": "Juniper-forward.",
+    "price": 4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "whiskey",
+    "name": "Whiskey",
+    "description": "Smooth whiskey",
+    "hiddenDescription": "Vanilla and oak.",
+    "price": 4.5,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tequila",
+    "name": "Tequila",
+    "description": "Agave spirit",
+    "hiddenDescription": "Blanco shot.",
+    "price": 4.2,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "jaegermeister",
+    "name": "Jägermeister",
+    "description": "Herbal liqueur",
+    "hiddenDescription": "Serve ice-cold.",
+    "price": 4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "obstler",
+    "name": "Obstler",
+    "description": "Fruit brandy",
+    "hiddenDescription": "Apple/pear schnaps.",
+    "price": 4,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.2,
+    "categories": [
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mojito",
+    "name": "Mojito",
+    "description": "Rum, mint, lime",
+    "hiddenDescription": "Cuban classic.",
+    "price": 8.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "caipirinha",
+    "name": "Caipirinha",
+    "description": "Cachaça, lime, sugar",
+    "hiddenDescription": "Brazilian favorite.",
+    "price": 8.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "sex-on-the-beach",
+    "name": "Sex on the Beach",
+    "description": "Vodka, peach, cranberry",
+    "hiddenDescription": "Fruity long drink.",
+    "price": 8.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pina-colada",
+    "name": "Piña Colada",
+    "description": "Rum, coconut, pineapple",
+    "hiddenDescription": "Creamy tropical.",
+    "price": 8.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gin-tonic",
+    "name": "Gin Tonic",
+    "description": "Gin with tonic water",
+    "hiddenDescription": "Citrus garnish.",
+    "price": 8,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "cocktails",
+      "spirits"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tequila-sunrise",
+    "name": "Tequila Sunrise",
+    "description": "Tequila, orange, grenadine",
+    "hiddenDescription": "Sunset layers.",
+    "price": 8.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mai-tai",
+    "name": "Mai Tai",
+    "description": "Rum, lime, almond",
+    "hiddenDescription": "Tiki classic.",
+    "price": 8.8,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "cocktails"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "margarita",
+    "name": "Margarita",
+    "description": "Tequila, lime, triple sec",
+    "hiddenDescription": "Salt rim optional.",
+    "price": 8.8,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "cocktails"
+    ]
+  }
 ]

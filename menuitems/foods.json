@@ -1,98 +1,1573 @@
 [
-  { "id": "bruschetta", "name": "Bruschetta", "description": "Toasted bread, tomatoes, basil", "hiddenDescription": "Garlic olive oil drizzle.", "price": 6.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["appetizers"] },
-  { "id": "garlic-bread", "name": "Garlic Bread", "description": "Buttery garlic baguette", "hiddenDescription": "Parsley and parmesan.", "price": 5.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["appetizers"] },
-  { "id": "mozzarella-sticks", "name": "Mozzarella Sticks", "description": "Crispy fried mozzarella", "hiddenDescription": "Served with marinara.", "price": 7.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["appetizers"] },
-  { "id": "caprese", "name": "Caprese", "description": "Tomato, mozzarella, basil", "hiddenDescription": "Balsamic glaze.", "price": 8.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.7, "categories": ["appetizers"] },
-  { "id": "antipasti", "name": "Antipasti Teller", "description": "Grilled vegetables platter", "hiddenDescription": "Marinated seasonal veggies.", "price": 9.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["appetizers"] },
-  { "id": "onion-rings", "name": "Onion Rings", "description": "Crispy battered onions", "hiddenDescription": "Served with dip.", "price": 6.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.4, "categories": ["appetizers"] },
-  { "id": "chicken-wings", "name": "Chicken Wings", "description": "Spicy glazed wings", "hiddenDescription": "Served with ranch.", "price": 8.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["appetizers"] },
-  { "id": "suppe-des-tages", "name": "Suppe des Tages", "description": "Soup of the day", "hiddenDescription": "Ask for today’s pick.", "price": 6.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.3, "categories": ["appetizers"] },
-  { "id": "tomatensuppe", "name": "Tomatensuppe", "description": "Tomato soup", "hiddenDescription": "Creamy basil finish.", "price": 6.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.4, "categories": ["appetizers"] },
-  { "id": "kuerbissuppe", "name": "Kürbissuppe", "description": "Pumpkin soup", "hiddenDescription": "Hint of nutmeg.", "price": 6.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.4, "categories": ["appetizers"] },
-  { "id": "minestrone", "name": "Minestrone", "description": "Italian vegetable soup", "hiddenDescription": "Beans and pasta.", "price": 6.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.4, "categories": ["appetizers"] },
-
-  { "id": "caesar", "name": "Caesar Salad", "description": "Romaine, croutons, parmesan", "hiddenDescription": "Creamy Caesar dressing.", "price": 9.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["salads"] },
-  { "id": "caesar-chicken", "name": "Caesar Chicken Salad", "description": "Caesar with grilled chicken", "hiddenDescription": "Protein-packed.", "price": 11.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.7, "categories": ["salads"] },
-  { "id": "gruener-salat", "name": "Grüner Salat", "description": "Mixed green salad", "hiddenDescription": "Light vinaigrette.", "price": 7.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.3, "categories": ["salads"] },
-  { "id": "gemischter-salat", "name": "Gemischter Salat", "description": "Mixed salad bowl", "hiddenDescription": "Seasonal veggies.", "price": 8.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.4, "categories": ["salads"] },
-  { "id": "thunfischsalat", "name": "Thunfischsalat", "description": "Tuna salad", "hiddenDescription": "With olives and egg.", "price": 10.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["salads"] },
-  { "id": "bauernsalat", "name": "Bauernsalat", "description": "Farmer’s salad", "hiddenDescription": "Tomato, cucumber, feta.", "price": 9.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["salads"] },
-  { "id": "mozzarella-salat", "name": "Mozzarella Salat", "description": "Mozzarella with greens", "hiddenDescription": "Herb pesto dressing.", "price": 9.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["salads"] },
-  { "id": "avocado-salat", "name": "Avocado Salat", "description": "Avocado salad bowl", "hiddenDescription": "Citrus dressing.", "price": 10.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["salads"] },
-
-  { "id": "pizza-margherita", "name": "Pizza Margherita", "description": "Tomato, mozzarella, basil", "hiddenDescription": "Classic Italian.", "price": 10.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.7, "categories": ["pizza", "vegetarian"] },
-  { "id": "pizza-salami", "name": "Pizza Salami", "description": "Salami-topped pizza", "hiddenDescription": "Tomato-mozzarella base.", "price": 11.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.7, "categories": ["pizza"] },
-  { "id": "pizza-funghi", "name": "Pizza Funghi", "description": "Mushroom pizza", "hiddenDescription": "Garlic mushrooms.", "price": 11.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["pizza", "vegetarian"] },
-  { "id": "pizza-tonno", "name": "Pizza Tonno", "description": "Tuna pizza", "hiddenDescription": "Onions and capers.", "price": 12.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.5, "categories": ["pizza", "fish"] },
-  { "id": "pizza-hawaii", "name": "Pizza Hawaii", "description": "Ham and pineapple", "hiddenDescription": "Sweet-salty.", "price": 12.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.4, "categories": ["pizza"] },
-  { "id": "pizza-prosciutto", "name": "Pizza Prosciutto", "description": "Ham pizza", "hiddenDescription": "Mozzarella and oregano.", "price": 12.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.5, "categories": ["pizza"] },
-  { "id": "pizza-vegetarisch", "name": "Pizza Vegetarisch", "description": "Veggie pizza", "hiddenDescription": "Seasonal vegetables.", "price": 11.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["pizza", "vegetarian"] },
-  { "id": "pizza-quattro", "name": "Pizza Quattro Formaggi", "description": "Four cheese pizza", "hiddenDescription": "Rich and creamy.", "price": 12.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.7, "categories": ["pizza", "vegetarian"] },
-  { "id": "pizza-diavolo", "name": "Pizza Diavolo", "description": "Spicy salami pizza", "hiddenDescription": "Chili kick.", "price": 12.5, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["pizza"] },
-  { "id": "pizza-bbq", "name": "Pizza BBQ Chicken", "description": "BBQ chicken pizza", "hiddenDescription": "Smoky sauce.", "price": 12.8, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["pizza"] },
-  { "id": "pizza-pepperoni", "name": "Pizza Pepperoni", "description": "Pepperoni pizza", "hiddenDescription": "Spiced sausage.", "price": 12.0, "photos": ["/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"], "rate": 4.6, "categories": ["pizza"] },
-
-  { "id": "spaghetti-bolognese", "name": "Spaghetti Bolognese", "description": "Rich meat ragu", "hiddenDescription": "Parmesan topping.", "price": 12.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["pasta", "meat"] },
-  { "id": "spaghetti-carbonara", "name": "Spaghetti Carbonara", "description": "Egg, bacon, pecorino", "hiddenDescription": "Creamy classic.", "price": 12.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.7, "categories": ["pasta"] },
-  { "id": "penne-arrabiata", "name": "Penne Arrabiata", "description": "Spicy tomato penne", "hiddenDescription": "Garlic and chili.", "price": 11.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["pasta", "vegetarian"] },
-  { "id": "lasagne", "name": "Lasagne", "description": "Layered pasta bake", "hiddenDescription": "Beef ragu, bechamel.", "price": 13.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.7, "categories": ["pasta", "meat"] },
-  { "id": "fettuccine-alfredo", "name": "Fettuccine Alfredo", "description": "Creamy parmesan sauce", "hiddenDescription": "Butter and cream.", "price": 12.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["pasta", "vegetarian"] },
-  { "id": "tortellini-panna", "name": "Tortellini Panna", "description": "Ham cream tortellini", "hiddenDescription": "Comfort classic.", "price": 12.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["pasta"] },
-  { "id": "gnocchi-tomate", "name": "Gnocchi mit Tomatensoße", "description": "Potato gnocchi tomato", "hiddenDescription": "Basil finish.", "price": 12.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["pasta", "vegetarian"] },
-  { "id": "tagliatelle-lachs", "name": "Tagliatelle Lachs", "description": "Salmon pasta", "hiddenDescription": "Creamy dill sauce.", "price": 13.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.7, "categories": ["pasta", "fish"] },
-  { "id": "penne-pesto", "name": "Penne Pesto", "description": "Basil pesto penne", "hiddenDescription": "Pine nuts and parmesan.", "price": 11.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["pasta", "vegetarian"] },
-
-  { "id": "schnitzel", "name": "Schnitzel Wiener Art", "description": "Breaded chicken/veal schnitzel", "hiddenDescription": "Lemon wedge.", "price": 14.0, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.7, "categories": ["meat"] },
-  { "id": "jaegerschnitzel", "name": "Jägerschnitzel", "description": "Schnitzel with mushroom sauce", "hiddenDescription": "Rich gravy.", "price": 14.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.7, "categories": ["meat"] },
-  { "id": "zigeunerschnitzel", "name": "Zigeunerschnitzel", "description": "Schnitzel with pepper sauce", "hiddenDescription": "Spiced paprika gravy.", "price": 14.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["meat"] },
-  { "id": "rindersteak", "name": "Rindersteak", "description": "Beef steak", "hiddenDescription": "Grilled to order.", "price": 18.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.8, "categories": ["meat"] },
-  { "id": "haehnchenbrust", "name": "Hähnchenbrustfilet", "description": "Grilled chicken breast", "hiddenDescription": "Herb marinade.", "price": 13.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["meat"] },
-  { "id": "schweinesteak", "name": "Schweinesteak", "description": "Pork steak", "hiddenDescription": "Rosemary butter.", "price": 13.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["meat"] },
-  { "id": "bratwurst", "name": "Bratwurst", "description": "German sausage", "hiddenDescription": "With mustard.", "price": 11.0, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["meat"] },
-  { "id": "currywurst", "name": "Currywurst", "description": "Sausage with curry sauce", "hiddenDescription": "Berlin style.", "price": 11.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["meat"] },
-  { "id": "beef-burger", "name": "Beef Burger", "description": "Grilled beef burger", "hiddenDescription": "Lettuce, tomato.", "price": 12.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["meat"] },
-  { "id": "chicken-burger", "name": "Chicken Burger", "description": "Crispy chicken burger", "hiddenDescription": "Spicy mayo.", "price": 12.0, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["meat"] },
-  { "id": "cheeseburger", "name": "Cheeseburger", "description": "Beef burger with cheese", "hiddenDescription": "Cheddar melt.", "price": 12.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.6, "categories": ["meat"] },
-
-  { "id": "lachsfilet", "name": "Lachsfilet", "description": "Salmon fillet", "hiddenDescription": "Pan-seared.", "price": 17.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.7, "categories": ["fish"] },
-  { "id": "fish-and-chips", "name": "Fish & Chips", "description": "Fried fish, fries", "hiddenDescription": "Tartar sauce.", "price": 13.5, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["fish"] },
-  { "id": "zander", "name": "Gebratener Zander", "description": "Seared pike-perch", "hiddenDescription": "Lemon butter.", "price": 16.5, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["fish"] },
-  { "id": "garnelenpfanne", "name": "Garnelenpfanne", "description": "Sautéed shrimp", "hiddenDescription": "Garlic and herbs.", "price": 15.5, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.6, "categories": ["fish"] },
-  { "id": "calamari", "name": "Calamari", "description": "Fried calamari", "hiddenDescription": "Aioli dip.", "price": 13.0, "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"], "rate": 4.5, "categories": ["fish", "appetizers"] },
-
-  { "id": "veggie-burger", "name": "Veggie Burger", "description": "Plant-based patty", "hiddenDescription": "Avocado spread.", "price": 12.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["vegetarian"] },
-  { "id": "falafel-teller", "name": "Falafel Teller", "description": "Falafel plate", "hiddenDescription": "Hummus and salad.", "price": 12.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["vegetarian", "vegan"] },
-  { "id": "gemuesepfanne", "name": "Gemüsepfanne", "description": "Sautéed vegetables", "hiddenDescription": "Herb oil finish.", "price": 11.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.4, "categories": ["vegetarian", "vegan"] },
-  { "id": "veggie-pasta", "name": "Veggie Pasta", "description": "Seasonal veggie pasta", "hiddenDescription": "Tomato basil sauce.", "price": 11.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["vegetarian", "pasta"] },
-  { "id": "veggie-pizza", "name": "Veggie Pizza", "description": "Vegetable pizza", "hiddenDescription": "Colorful toppings.", "price": 11.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["vegetarian", "pizza"] },
-  { "id": "kaesespaetzle", "name": "Käsespätzle", "description": "Cheese spaetzle", "hiddenDescription": "Caramelized onions.", "price": 11.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["vegetarian"] },
-  { "id": "kartoffelpuffer", "name": "Kartoffelpuffer", "description": "Potato pancakes", "hiddenDescription": "Apple sauce side.", "price": 9.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["vegetarian"] },
-
-  { "id": "vegan-bowl", "name": "Vegan Bowl", "description": "Veggies, rice, sauce", "hiddenDescription": "Sesame dressing.", "price": 11.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["vegan"] },
-  { "id": "vegan-curry", "name": "Veganes Curry", "description": "Coconut veggie curry", "hiddenDescription": "Jasmine rice.", "price": 12.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["vegan"] },
-  { "id": "vegan-pasta", "name": "Vegane Pasta", "description": "Vegan pasta bowl", "hiddenDescription": "Tomato or pesto.", "price": 11.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["vegan", "pasta"] },
-  { "id": "vegan-schnitzel", "name": "Veganes Schnitzel", "description": "Plant-based schnitzel", "hiddenDescription": "Crispy coating.", "price": 12.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["vegan"] },
-  { "id": "vegan-chili", "name": "Veganes Chili", "description": "Bean and veggie chili", "hiddenDescription": "Mild spice.", "price": 11.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["vegan"] },
-
-  { "id": "pommes", "name": "Pommes Frites", "description": "French fries", "hiddenDescription": "Crispy and golden.", "price": 4.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["sides"] },
-  { "id": "suesskartoffel-pommes", "name": "Süßkartoffel Pommes", "description": "Sweet potato fries", "hiddenDescription": "Smoky dip.", "price": 5.0, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.5, "categories": ["sides"] },
-  { "id": "kartoffelsalat", "name": "Kartoffelsalat", "description": "Potato salad", "hiddenDescription": "Herbs and vinegar.", "price": 4.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.4, "categories": ["sides"] },
-  { "id": "bratkartoffeln", "name": "Bratkartoffeln", "description": "Fried potatoes", "hiddenDescription": "Onions and herbs.", "price": 5.0, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.4, "categories": ["sides"] },
-  { "id": "reis", "name": "Reis", "description": "Steamed rice", "hiddenDescription": "Fluffy grains.", "price": 3.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.3, "categories": ["sides"] },
-  { "id": "kartoffelknoedel", "name": "Kartoffelknödel", "description": "Potato dumplings", "hiddenDescription": "Traditional side.", "price": 4.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.4, "categories": ["sides"] },
-  { "id": "gemuese", "name": "Gemüse", "description": "Steamed vegetables", "hiddenDescription": "Lightly seasoned.", "price": 4.5, "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"], "rate": 4.3, "categories": ["sides", "vegetarian", "vegan"] },
-
-  { "id": "tiramisu", "name": "Tiramisu", "description": "Mascarpone, espresso, cocoa", "hiddenDescription": "Classic Italian dessert.", "price": 6.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.7, "categories": ["desserts"] },
-  { "id": "schokokuchen", "name": "Schokokuchen (warm)", "description": "Warm chocolate cake", "hiddenDescription": "Molten center.", "price": 6.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["desserts"] },
-  { "id": "apfelstrudel", "name": "Apfelstrudel", "description": "Apple strudel", "hiddenDescription": "Vanilla sauce.", "price": 6.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["desserts"] },
-  { "id": "kaesekuchen", "name": "Käsekuchen", "description": "Cheesecake", "hiddenDescription": "Creamy classic.", "price": 5.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["desserts"] },
-  { "id": "panna-cotta", "name": "Panna Cotta", "description": "Creamy panna cotta", "hiddenDescription": "Berry coulis.", "price": 6.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["desserts"] },
-  { "id": "eis", "name": "Eis Auswahl", "description": "Vanilla, chocolate, strawberry", "hiddenDescription": "Ice cream trio.", "price": 5.0, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.5, "categories": ["desserts"] },
-  { "id": "waffeln-eis", "name": "Waffeln mit Eis", "description": "Waffle with ice cream", "hiddenDescription": "Whipped cream.", "price": 6.5, "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"], "rate": 4.6, "categories": ["desserts"] },
-
-  { "id": "kinder-pizza", "name": "Kinder-Pizza", "description": "Kid’s pizza", "hiddenDescription": "Small margherita.", "price": 7.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.6, "categories": ["kids", "pizza"] },
-  { "id": "kinder-nuggets", "name": "Chicken Nuggets + Pommes", "description": "Kids nuggets and fries", "hiddenDescription": "Ketchup dip.", "price": 7.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["kids"] },
-  { "id": "mini-schnitzel", "name": "Mini-Schnitzel", "description": "Kid’s schnitzel", "hiddenDescription": "Served with fries.", "price": 7.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["kids"] },
-  { "id": "kinder-pasta", "name": "Pasta mit Tomatensoße", "description": "Kids pasta tomato sauce", "hiddenDescription": "Parmesan on side.", "price": 7.0, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["kids", "pasta"] },
-  { "id": "mini-burger", "name": "Mini-Burger", "description": "Kid’s burger", "hiddenDescription": "Beef patty, cheese.", "price": 7.5, "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"], "rate": 4.5, "categories": ["kids", "meat"] }
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bruschetta",
+    "name": "Bruschetta",
+    "description": "Toasted bread, tomatoes, basil",
+    "hiddenDescription": "Garlic olive oil drizzle.",
+    "price": 6.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "garlic-bread",
+    "name": "Garlic Bread",
+    "description": "Buttery garlic baguette",
+    "hiddenDescription": "Parsley and parmesan.",
+    "price": 5.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mozzarella-sticks",
+    "name": "Mozzarella Sticks",
+    "description": "Crispy fried mozzarella",
+    "hiddenDescription": "Served with marinara.",
+    "price": 7,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "caprese",
+    "name": "Caprese",
+    "description": "Tomato, mozzarella, basil",
+    "hiddenDescription": "Balsamic glaze.",
+    "price": 8,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "antipasti",
+    "name": "Antipasti Teller",
+    "description": "Grilled vegetables platter",
+    "hiddenDescription": "Marinated seasonal veggies.",
+    "price": 9,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "onion-rings",
+    "name": "Onion Rings",
+    "description": "Crispy battered onions",
+    "hiddenDescription": "Served with dip.",
+    "price": 6.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "chicken-wings",
+    "name": "Chicken Wings",
+    "description": "Spicy glazed wings",
+    "hiddenDescription": "Served with ranch.",
+    "price": 8.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "suppe-des-tages",
+    "name": "Suppe des Tages",
+    "description": "Soup of the day",
+    "hiddenDescription": "Ask for today’s pick.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tomatensuppe",
+    "name": "Tomatensuppe",
+    "description": "Tomato soup",
+    "hiddenDescription": "Creamy basil finish.",
+    "price": 6,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kuerbissuppe",
+    "name": "Kürbissuppe",
+    "description": "Pumpkin soup",
+    "hiddenDescription": "Hint of nutmeg.",
+    "price": 6.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "minestrone",
+    "name": "Minestrone",
+    "description": "Italian vegetable soup",
+    "hiddenDescription": "Beans and pasta.",
+    "price": 6.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "caesar",
+    "name": "Caesar Salad",
+    "description": "Romaine, croutons, parmesan",
+    "hiddenDescription": "Creamy Caesar dressing.",
+    "price": 9.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "caesar-chicken",
+    "name": "Caesar Chicken Salad",
+    "description": "Caesar with grilled chicken",
+    "hiddenDescription": "Protein-packed.",
+    "price": 11,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gruener-salat",
+    "name": "Grüner Salat",
+    "description": "Mixed green salad",
+    "hiddenDescription": "Light vinaigrette.",
+    "price": 7.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gemischter-salat",
+    "name": "Gemischter Salat",
+    "description": "Mixed salad bowl",
+    "hiddenDescription": "Seasonal veggies.",
+    "price": 8,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "thunfischsalat",
+    "name": "Thunfischsalat",
+    "description": "Tuna salad",
+    "hiddenDescription": "With olives and egg.",
+    "price": 10,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bauernsalat",
+    "name": "Bauernsalat",
+    "description": "Farmer’s salad",
+    "hiddenDescription": "Tomato, cucumber, feta.",
+    "price": 9,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mozzarella-salat",
+    "name": "Mozzarella Salat",
+    "description": "Mozzarella with greens",
+    "hiddenDescription": "Herb pesto dressing.",
+    "price": 9.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "avocado-salat",
+    "name": "Avocado Salat",
+    "description": "Avocado salad bowl",
+    "hiddenDescription": "Citrus dressing.",
+    "price": 10,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "salads"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-margherita",
+    "name": "Pizza Margherita",
+    "description": "Tomato, mozzarella, basil",
+    "hiddenDescription": "Classic Italian.",
+    "price": 10.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "pizza",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-salami",
+    "name": "Pizza Salami",
+    "description": "Salami-topped pizza",
+    "hiddenDescription": "Tomato-mozzarella base.",
+    "price": 11.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-funghi",
+    "name": "Pizza Funghi",
+    "description": "Mushroom pizza",
+    "hiddenDescription": "Garlic mushrooms.",
+    "price": 11,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pizza",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-tonno",
+    "name": "Pizza Tonno",
+    "description": "Tuna pizza",
+    "hiddenDescription": "Onions and capers.",
+    "price": 12,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "pizza",
+      "fish"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-hawaii",
+    "name": "Pizza Hawaii",
+    "description": "Ham and pineapple",
+    "hiddenDescription": "Sweet-salty.",
+    "price": 12,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-prosciutto",
+    "name": "Pizza Prosciutto",
+    "description": "Ham pizza",
+    "hiddenDescription": "Mozzarella and oregano.",
+    "price": 12,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-vegetarisch",
+    "name": "Pizza Vegetarisch",
+    "description": "Veggie pizza",
+    "hiddenDescription": "Seasonal vegetables.",
+    "price": 11.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pizza",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-quattro",
+    "name": "Pizza Quattro Formaggi",
+    "description": "Four cheese pizza",
+    "hiddenDescription": "Rich and creamy.",
+    "price": 12.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "pizza",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-diavolo",
+    "name": "Pizza Diavolo",
+    "description": "Spicy salami pizza",
+    "hiddenDescription": "Chili kick.",
+    "price": 12.5,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-bbq",
+    "name": "Pizza BBQ Chicken",
+    "description": "BBQ chicken pizza",
+    "hiddenDescription": "Smoky sauce.",
+    "price": 12.8,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pizza-pepperoni",
+    "name": "Pizza Pepperoni",
+    "description": "Pepperoni pizza",
+    "hiddenDescription": "Spiced sausage.",
+    "price": 12,
+    "photos": [
+      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "spaghetti-bolognese",
+    "name": "Spaghetti Bolognese",
+    "description": "Rich meat ragu",
+    "hiddenDescription": "Parmesan topping.",
+    "price": 12,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pasta",
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "spaghetti-carbonara",
+    "name": "Spaghetti Carbonara",
+    "description": "Egg, bacon, pecorino",
+    "hiddenDescription": "Creamy classic.",
+    "price": 12.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "pasta"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "penne-arrabiata",
+    "name": "Penne Arrabiata",
+    "description": "Spicy tomato penne",
+    "hiddenDescription": "Garlic and chili.",
+    "price": 11.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "pasta",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "lasagne",
+    "name": "Lasagne",
+    "description": "Layered pasta bake",
+    "hiddenDescription": "Beef ragu, bechamel.",
+    "price": 13,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "pasta",
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "fettuccine-alfredo",
+    "name": "Fettuccine Alfredo",
+    "description": "Creamy parmesan sauce",
+    "hiddenDescription": "Butter and cream.",
+    "price": 12.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pasta",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tortellini-panna",
+    "name": "Tortellini Panna",
+    "description": "Ham cream tortellini",
+    "hiddenDescription": "Comfort classic.",
+    "price": 12.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "pasta"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gnocchi-tomate",
+    "name": "Gnocchi mit Tomatensoße",
+    "description": "Potato gnocchi tomato",
+    "hiddenDescription": "Basil finish.",
+    "price": 12,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pasta",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tagliatelle-lachs",
+    "name": "Tagliatelle Lachs",
+    "description": "Salmon pasta",
+    "hiddenDescription": "Creamy dill sauce.",
+    "price": 13.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "pasta",
+      "fish"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "penne-pesto",
+    "name": "Penne Pesto",
+    "description": "Basil pesto penne",
+    "hiddenDescription": "Pine nuts and parmesan.",
+    "price": 11.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "pasta",
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "schnitzel",
+    "name": "Schnitzel Wiener Art",
+    "description": "Breaded chicken/veal schnitzel",
+    "hiddenDescription": "Lemon wedge.",
+    "price": 14,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "jaegerschnitzel",
+    "name": "Jägerschnitzel",
+    "description": "Schnitzel with mushroom sauce",
+    "hiddenDescription": "Rich gravy.",
+    "price": 14.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "zigeunerschnitzel",
+    "name": "Zigeunerschnitzel",
+    "description": "Schnitzel with pepper sauce",
+    "hiddenDescription": "Spiced paprika gravy.",
+    "price": 14.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "rindersteak",
+    "name": "Rindersteak",
+    "description": "Beef steak",
+    "hiddenDescription": "Grilled to order.",
+    "price": 18.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.8,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "haehnchenbrust",
+    "name": "Hähnchenbrustfilet",
+    "description": "Grilled chicken breast",
+    "hiddenDescription": "Herb marinade.",
+    "price": 13.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "schweinesteak",
+    "name": "Schweinesteak",
+    "description": "Pork steak",
+    "hiddenDescription": "Rosemary butter.",
+    "price": 13.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bratwurst",
+    "name": "Bratwurst",
+    "description": "German sausage",
+    "hiddenDescription": "With mustard.",
+    "price": 11,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "currywurst",
+    "name": "Currywurst",
+    "description": "Sausage with curry sauce",
+    "hiddenDescription": "Berlin style.",
+    "price": 11.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "beef-burger",
+    "name": "Beef Burger",
+    "description": "Grilled beef burger",
+    "hiddenDescription": "Lettuce, tomato.",
+    "price": 12.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "chicken-burger",
+    "name": "Chicken Burger",
+    "description": "Crispy chicken burger",
+    "hiddenDescription": "Spicy mayo.",
+    "price": 12,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "cheeseburger",
+    "name": "Cheeseburger",
+    "description": "Beef burger with cheese",
+    "hiddenDescription": "Cheddar melt.",
+    "price": 12.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "meat"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "lachsfilet",
+    "name": "Lachsfilet",
+    "description": "Salmon fillet",
+    "hiddenDescription": "Pan-seared.",
+    "price": 17,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "fish"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "fish-and-chips",
+    "name": "Fish & Chips",
+    "description": "Fried fish, fries",
+    "hiddenDescription": "Tartar sauce.",
+    "price": 13.5,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "fish"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "zander",
+    "name": "Gebratener Zander",
+    "description": "Seared pike-perch",
+    "hiddenDescription": "Lemon butter.",
+    "price": 16.5,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "fish"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "garnelenpfanne",
+    "name": "Garnelenpfanne",
+    "description": "Sautéed shrimp",
+    "hiddenDescription": "Garlic and herbs.",
+    "price": 15.5,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "fish"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "calamari",
+    "name": "Calamari",
+    "description": "Fried calamari",
+    "hiddenDescription": "Aioli dip.",
+    "price": 13,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "fish",
+      "appetizers"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "veggie-burger",
+    "name": "Veggie Burger",
+    "description": "Plant-based patty",
+    "hiddenDescription": "Avocado spread.",
+    "price": 12.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "falafel-teller",
+    "name": "Falafel Teller",
+    "description": "Falafel plate",
+    "hiddenDescription": "Hummus and salad.",
+    "price": 12,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegetarian",
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gemuesepfanne",
+    "name": "Gemüsepfanne",
+    "description": "Sautéed vegetables",
+    "hiddenDescription": "Herb oil finish.",
+    "price": 11.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "vegetarian",
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "veggie-pasta",
+    "name": "Veggie Pasta",
+    "description": "Seasonal veggie pasta",
+    "hiddenDescription": "Tomato basil sauce.",
+    "price": 11.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegetarian",
+      "pasta"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "veggie-pizza",
+    "name": "Veggie Pizza",
+    "description": "Vegetable pizza",
+    "hiddenDescription": "Colorful toppings.",
+    "price": 11.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegetarian",
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kaesespaetzle",
+    "name": "Käsespätzle",
+    "description": "Cheese spaetzle",
+    "hiddenDescription": "Caramelized onions.",
+    "price": 11,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kartoffelpuffer",
+    "name": "Kartoffelpuffer",
+    "description": "Potato pancakes",
+    "hiddenDescription": "Apple sauce side.",
+    "price": 9.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegetarian"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "vegan-bowl",
+    "name": "Vegan Bowl",
+    "description": "Veggies, rice, sauce",
+    "hiddenDescription": "Sesame dressing.",
+    "price": 11.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "vegan-curry",
+    "name": "Veganes Curry",
+    "description": "Coconut veggie curry",
+    "hiddenDescription": "Jasmine rice.",
+    "price": 12,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "vegan-pasta",
+    "name": "Vegane Pasta",
+    "description": "Vegan pasta bowl",
+    "hiddenDescription": "Tomato or pesto.",
+    "price": 11.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegan",
+      "pasta"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "vegan-schnitzel",
+    "name": "Veganes Schnitzel",
+    "description": "Plant-based schnitzel",
+    "hiddenDescription": "Crispy coating.",
+    "price": 12.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "vegan-chili",
+    "name": "Veganes Chili",
+    "description": "Bean and veggie chili",
+    "hiddenDescription": "Mild spice.",
+    "price": 11.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "pommes",
+    "name": "Pommes Frites",
+    "description": "French fries",
+    "hiddenDescription": "Crispy and golden.",
+    "price": 4.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "sides"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "suesskartoffel-pommes",
+    "name": "Süßkartoffel Pommes",
+    "description": "Sweet potato fries",
+    "hiddenDescription": "Smoky dip.",
+    "price": 5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "sides"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kartoffelsalat",
+    "name": "Kartoffelsalat",
+    "description": "Potato salad",
+    "hiddenDescription": "Herbs and vinegar.",
+    "price": 4.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "sides"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bratkartoffeln",
+    "name": "Bratkartoffeln",
+    "description": "Fried potatoes",
+    "hiddenDescription": "Onions and herbs.",
+    "price": 5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "sides"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "reis",
+    "name": "Reis",
+    "description": "Steamed rice",
+    "hiddenDescription": "Fluffy grains.",
+    "price": 3.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "sides"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kartoffelknoedel",
+    "name": "Kartoffelknödel",
+    "description": "Potato dumplings",
+    "hiddenDescription": "Traditional side.",
+    "price": 4.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "sides"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "gemuese",
+    "name": "Gemüse",
+    "description": "Steamed vegetables",
+    "hiddenDescription": "Lightly seasoned.",
+    "price": 4.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "sides",
+      "vegetarian",
+      "vegan"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tiramisu",
+    "name": "Tiramisu",
+    "description": "Mascarpone, espresso, cocoa",
+    "hiddenDescription": "Classic Italian dessert.",
+    "price": 6.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "schokokuchen",
+    "name": "Schokokuchen (warm)",
+    "description": "Warm chocolate cake",
+    "hiddenDescription": "Molten center.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "apfelstrudel",
+    "name": "Apfelstrudel",
+    "description": "Apple strudel",
+    "hiddenDescription": "Vanilla sauce.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kaesekuchen",
+    "name": "Käsekuchen",
+    "description": "Cheesecake",
+    "hiddenDescription": "Creamy classic.",
+    "price": 5.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "panna-cotta",
+    "name": "Panna Cotta",
+    "description": "Creamy panna cotta",
+    "hiddenDescription": "Berry coulis.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "eis",
+    "name": "Eis Auswahl",
+    "description": "Vanilla, chocolate, strawberry",
+    "hiddenDescription": "Ice cream trio.",
+    "price": 5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "waffeln-eis",
+    "name": "Waffeln mit Eis",
+    "description": "Waffle with ice cream",
+    "hiddenDescription": "Whipped cream.",
+    "price": 6.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "desserts"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kinder-pizza",
+    "name": "Kinder-Pizza",
+    "description": "Kid’s pizza",
+    "hiddenDescription": "Small margherita.",
+    "price": 7,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "kids",
+      "pizza"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kinder-nuggets",
+    "name": "Chicken Nuggets + Pommes",
+    "description": "Kids nuggets and fries",
+    "hiddenDescription": "Ketchup dip.",
+    "price": 7.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "kids"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mini-schnitzel",
+    "name": "Mini-Schnitzel",
+    "description": "Kid’s schnitzel",
+    "hiddenDescription": "Served with fries.",
+    "price": 7.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "kids"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kinder-pasta",
+    "name": "Pasta mit Tomatensoße",
+    "description": "Kids pasta tomato sauce",
+    "hiddenDescription": "Parmesan on side.",
+    "price": 7,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "kids",
+      "pasta"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mini-burger",
+    "name": "Mini-Burger",
+    "description": "Kid’s burger",
+    "hiddenDescription": "Beef patty, cheese.",
+    "price": 7.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "kids",
+      "meat"
+    ]
+  }
 ]

@@ -1,22 +1,368 @@
 [
   {
-    "id": "cheesecake",
-    "name": "Cheesecake Slice",
-    "description": "Creamy, with berry topping.",
-    "hiddenDescription": "Baked New York style, seasonal berries.",
-    "price": 4.9,
-    "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"],
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "bruschetta",
+    "name": "Bruschetta",
+    "description": "Tomato, basil, toasted bread",
+    "hiddenDescription": "Garlic olive oil drizzle.",
+    "price": 6.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
     "rate": 4.6,
-    "categories": ["dessert"]
+    "categories": [
+      "vorspeisen"
+    ]
   },
   {
-    "id": "mocktail-mix",
-    "name": "Mocktail Mix",
-    "description": "Fruity mocktail with fresh garnish.",
-    "hiddenDescription": "Pineapple, citrus, mint, zero-proof.",
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "garlic-bread",
+    "name": "Garlic Bread",
+    "description": "Buttery garlic baguette",
+    "hiddenDescription": "Parsley and parmesan.",
+    "price": 5.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "mozzarella-sticks",
+    "name": "Mozzarella Sticks",
+    "description": "Crispy mozzarella, marinara dip",
+    "hiddenDescription": "Golden fried.",
+    "price": 7,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "caprese",
+    "name": "Caprese",
+    "description": "Tomato & mozzarella salad",
+    "hiddenDescription": "Balsamic glaze.",
+    "price": 8,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "antipasti",
+    "name": "Antipasti Teller",
+    "description": "Grilled vegetable platter",
+    "hiddenDescription": "Marinated seasonal veggies.",
+    "price": 9,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "onion-rings",
+    "name": "Onion Rings",
+    "description": "Crispy battered onions",
+    "hiddenDescription": "Served with dip.",
     "price": 6.5,
-    "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"],
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
     "rate": 4.4,
-    "categories": ["mocktail", "saft"]
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "chicken-wings",
+    "name": "Chicken Wings",
+    "description": "Spicy glazed wings",
+    "hiddenDescription": "Ranch dip.",
+    "price": 8.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "suppe-des-tages",
+    "name": "Suppe des Tages",
+    "description": "Soup of the day",
+    "hiddenDescription": "Ask for today’s pick.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.3,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tomatensuppe",
+    "name": "Tomatensuppe",
+    "description": "Tomato soup",
+    "hiddenDescription": "Basil cream.",
+    "price": 6,
+    "photos": [
+      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kuerbissuppe",
+    "name": "Kürbissuppe",
+    "description": "Pumpkin soup",
+    "hiddenDescription": "Hint of nutmeg.",
+    "price": 6.5,
+    "photos": [
+      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "minestrone",
+    "name": "Minestrone",
+    "description": "Italian vegetable soup",
+    "hiddenDescription": "Beans and pasta.",
+    "price": 6.5,
+    "photos": [
+      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "vorspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "tiramisu",
+    "name": "Tiramisu",
+    "description": "Mascarpone, espresso, cocoa",
+    "hiddenDescription": "Italian classic.",
+    "price": 6.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.7,
+    "categories": [
+      "nachspeisen",
+      "cake"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "schokokuchen",
+    "name": "Schokokuchen (warm)",
+    "description": "Warm chocolate cake",
+    "hiddenDescription": "Molten center.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "nachspeisen",
+      "cake"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "apfelstrudel",
+    "name": "Apfelstrudel",
+    "description": "Apple strudel",
+    "hiddenDescription": "Vanilla sauce.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "nachspeisen",
+      "cake"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "kaesekuchen",
+    "name": "Käsekuchen",
+    "description": "Cheesecake slice",
+    "hiddenDescription": "Creamy baked.",
+    "price": 5.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "nachspeisen",
+      "cake"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "panna-cotta",
+    "name": "Panna Cotta",
+    "description": "Creamy panna cotta",
+    "hiddenDescription": "Berry coulis.",
+    "price": 6,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "nachspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "eis",
+    "name": "Eis Auswahl",
+    "description": "Vanille, Schokolade, Erdbeere",
+    "hiddenDescription": "Ice cream trio.",
+    "price": 5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.5,
+    "categories": [
+      "nachspeisen",
+      "ice"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "waffeln-eis",
+    "name": "Waffeln mit Eis",
+    "description": "Waffle with ice cream",
+    "hiddenDescription": "Whipped cream.",
+    "price": 6.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "nachspeisen",
+      "ice"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "creme-brulee",
+    "name": "Crème Brûlée",
+    "description": "Caramelized custard",
+    "hiddenDescription": "Vanilla bean.",
+    "price": 6.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.6,
+    "categories": [
+      "nachspeisen"
+    ]
+  },
+  {
+    "options": [
+      "small",
+      "normal"
+    ],
+    "id": "obstsalat",
+    "name": "Obstsalat",
+    "description": "Fresh fruit salad",
+    "hiddenDescription": "Seasonal mix.",
+    "price": 5.5,
+    "photos": [
+      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+    ],
+    "rate": 4.4,
+    "categories": [
+      "nachspeisen"
+    ]
   }
 ]

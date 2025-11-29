@@ -27,7 +27,9 @@
     { "id": "kids", "label": "Kindergerichte", "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png" }
   ],
   "other": [
-    { "id": "dessert", "label": "Desserts", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
-    { "id": "mocktail", "label": "Mocktails", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" }
+    { "id": "vorspeisen", "label": "Vorspeisen", "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png" },
+    { "id": "nachspeisen", "label": "Nachspeisen", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "ice", "label": "Ice", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "cake", "label": "Cake", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" }
   ]
 }
