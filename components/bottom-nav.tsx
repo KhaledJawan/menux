@@ -2,28 +2,62 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { LucideIcon } from "lucide-react";
-import {
-  Bot,
-  Flame,
-  Home,
-  ReceiptText,
-  UserRound,
-} from "lucide-react";
+import Image from "next/image";
 
 type NavItem = {
   href: string;
   label: string;
-  icon: LucideIcon;
+  name: "home" | "bot" | "hot" | "bill" | "profile";
 };
 
 const items: NavItem[] = [
-  { href: "/", label: "Home", icon: Home },
-  { href: "/chatbot", label: "Chat bot", icon: Bot },
-  { href: "/hot", label: "Hot", icon: Flame },
-  { href: "/basket", label: "Basket", icon: ReceiptText },
-  { href: "/profile", label: "Profile", icon: UserRound },
+  { href: "/", label: "Home", name: "home" },
+  { href: "/chatbot", label: "Chat bot", name: "bot" },
+  { href: "/hot", label: "Hot", name: "hot" },
+  { href: "/basket", label: "Bill", name: "bill" },
+  { href: "/profile", label: "Profile", name: "profile" },
 ];
+
+const ICON_PATHS: Record<
+  NavItem["name"],
+  { active: string; inactive: string }
+> = {
+  home: {
+    active: "/icons/bold/home.svg",
+    inactive: "/icons/outline/home.svg",
+  },
+  bot: {
+    active: "/icons/bold/bot.svg",
+    inactive: "/icons/outline/bot-line.svg",
+  },
+  hot: {
+    active: "/icons/bold/heart.svg",
+    inactive: "/icons/outline/heart.svg",
+  },
+  bill: {
+    active: "/icons/bold/receipt-text.svg",
+    inactive: "/icons/bold/receipt-text.svg",
+  },
+  profile: {
+    active: "/icons/bold/frame.svg",
+    inactive: "/icons/outline/frame.svg",
+  },
+};
+
+function NavIcon({ name, active }: { name: NavItem["name"]; active: boolean }) {
+  const src = active ? ICON_PATHS[name].active : ICON_PATHS[name].inactive;
+  return (
+    <Image
+      src={src}
+      alt={`${name} icon`}
+      width={20}
+      height={20}
+      className="h-5 w-5"
+      priority
+    />
+  );
+}
+
 export default function BottomNav() {
   const pathname = usePathname();
 
@@ -41,13 +75,7 @@ export default function BottomNav() {
               href={item.href}
               className="flex flex-1 flex-col items-center gap-1 text-[11px]"
             >
-              <item.icon
-                className={`h-5 w-5 transition-colors ${
-                  active ? "text-primary" : "text-muted-foreground"
-                }`}
-                strokeWidth={2}
-                aria-hidden
-              />
+              <NavIcon name={item.name} active={active} />
               <span
                 className={`transition-colors ${
                   active
