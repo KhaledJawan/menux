@@ -5,15 +5,17 @@ import { menuItems } from "@/lib/menu";
 import { useCart } from "@/components/cart-context";
 import Image from "next/image";
 import { useState } from "react";
+import type { LucideIcon } from "lucide-react";
+import { CupSoda, Gift, Utensils } from "lucide-react";
 
 const tabs: {
   id: "food" | "drink" | "other";
   label: string;
-  icon: string;
+  icon: LucideIcon;
 }[] = [
-  { id: "drink", label: "Drinks", icon: "🥤" },
-  { id: "food", label: "Food", icon: "🍽️" },
-  { id: "other", label: "Others", icon: "🎁" },
+  { id: "drink", label: "Drinks", icon: CupSoda },
+  { id: "food", label: "Food", icon: Utensils },
+  { id: "other", label: "Others", icon: Gift },
 ];
 
 export default function HomePage() {
@@ -50,17 +52,17 @@ export default function HomePage() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               aria-label={tab.label}
-              className={`flex h-[60px] min-w-[60px] items-center justify-center gap-2 whitespace-nowrap rounded-[14px] px-4 text-sm shadow-sm transition ${
-                isActive
-                  ? "flex-1 bg-foreground font-semibold text-background"
-                  : "flex-none bg-muted text-foreground"
-              }`}
-            >
-              <span className="text-base">{tab.icon}</span>
-              {isActive ? <span className="truncate">{tab.label}</span> : null}
-            </button>
-          );
-        })}
+            className={`flex h-[60px] min-w-[60px] items-center justify-center gap-2 whitespace-nowrap rounded-[14px] px-4 text-sm shadow-sm transition ${
+              isActive
+                ? "flex-1 bg-foreground font-semibold text-background"
+                : "flex-none bg-muted text-foreground"
+            }`}
+          >
+            <tab.icon className="h-5 w-5" aria-hidden />
+            {isActive ? <span className="truncate">{tab.label}</span> : null}
+          </button>
+        );
+      })}
       </div>
 
       <section className="grid min-h-0 flex-1 grid-cols-2 gap-3 overflow-y-auto pb-4">
