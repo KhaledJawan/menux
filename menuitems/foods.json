@@ -1,0 +1,21 @@
+[
+  {
+    "id": "burger-classic",
+    "name": "Classic Burger",
+    "description": "Beef, cheese, lettuce, tomato, soft bun.",
+    "hiddenDescription": "House sauce, toasted brioche, served medium.",
+    "price": 11.5,
+    "photos": ["/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"],
+    "rate": 4.7,
+    "hot": true
+  },
+  {
+    "id": "veggie-bowl",
+    "name": "Veggie Bowl",
+    "description": "Seasonal vegetables, rice, light sauce.",
+    "hiddenDescription": "Roasted veggies with miso-ginger dressing.",
+    "price": 9.9,
+    "photos": ["/design/b09dc84574987a22dd1ce108952862dddac79b12.png"],
+    "rate": 4.5
+  }
+]
