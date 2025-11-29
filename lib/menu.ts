@@ -13,6 +13,7 @@ type RawMenuItem = {
   photos?: string[];
   rate?: number;
   hot?: boolean;
+  categories?: string[];
 };
 
 export type MenuItem = RawMenuItem & {
@@ -25,6 +26,7 @@ const mapItems = (data: RawMenuItem[], category: Category): MenuItem[] =>
     ...item,
     category,
     image: item.photos?.[0],
+    categories: item.categories ?? [],
   }));
 
 export const menuItems: MenuItem[] = [

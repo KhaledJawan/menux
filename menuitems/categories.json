@@ -1,0 +1,33 @@
+{
+  "drink": [
+    { "id": "cold-drinks", "label": "Kalte Getränke", "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png" },
+    { "id": "hot-drinks", "label": "Warme Getränke", "image": "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png" },
+    { "id": "non-alcoholic", "label": "Alkoholfreie Getränke", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "beer-draft", "label": "Bier vom Fass", "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png" },
+    { "id": "beer-bottle", "label": "Bier in Flasche", "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png" },
+    { "id": "beer-special", "label": "Spezialbier", "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png" },
+    { "id": "wine-white", "label": "Weißwein", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" },
+    { "id": "wine-red", "label": "Rotwein", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" },
+    { "id": "wine-rose", "label": "Rosé", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" },
+    { "id": "sparkling-aperitif", "label": "Sekt & Aperitifs", "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png" },
+    { "id": "spirits", "label": "Spirituosen", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" },
+    { "id": "cocktails", "label": "Cocktails", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" }
+  ],
+  "food": [
+    { "id": "appetizers", "label": "Vorspeisen", "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png" },
+    { "id": "salads", "label": "Salate", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "pizza", "label": "Pizza", "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png" },
+    { "id": "pasta", "label": "Pasta", "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png" },
+    { "id": "meat", "label": "Fleischgerichte", "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png" },
+    { "id": "fish", "label": "Fischgerichte", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" },
+    { "id": "vegetarian", "label": "Vegetarisch", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "vegan", "label": "Vegan", "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png" },
+    { "id": "sides", "label": "Beilagen", "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png" },
+    { "id": "desserts", "label": "Desserts", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "kids", "label": "Kindergerichte", "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png" }
+  ],
+  "other": [
+    { "id": "dessert", "label": "Desserts", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
+    { "id": "mocktail", "label": "Mocktails", "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png" }
+  ]
+}

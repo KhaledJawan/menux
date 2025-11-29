@@ -6,7 +6,8 @@
     "hiddenDescription": "Baked New York style, seasonal berries.",
     "price": 4.9,
     "photos": ["/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"],
-    "rate": 4.6
+    "rate": 4.6,
+    "categories": ["dessert"]
   },
   {
     "id": "mocktail-mix",
@@ -15,6 +16,7 @@
     "hiddenDescription": "Pineapple, citrus, mint, zero-proof.",
     "price": 6.5,
     "photos": ["/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"],
-    "rate": 4.4
+    "rate": 4.4,
+    "categories": ["mocktail", "saft"]
   }
 ]

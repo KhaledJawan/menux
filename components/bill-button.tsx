@@ -12,11 +12,12 @@ export default function BillButton() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center justify-center rounded-full bg-white px-3 py-2 text-xs font-semibold text-white shadow-sm ring-1 ring-border transition hover:bg-white/90"
+        id="bill_btn"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-xs font-semibold text-white shadow-sm transition hover:bg-black/80"
         aria-label="Bill"
       >
         <Image
-          src="/icons/bold/receipt-text.svg"
+          src="/icons/bold/receipt-disscount.svg"
           alt="Bill"
           width={20}
           height={20}

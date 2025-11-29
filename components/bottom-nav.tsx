@@ -7,14 +7,14 @@ import Image from "next/image";
 type NavItem = {
   href: string;
   label: string;
-  name: "home" | "bot" | "hot" | "bill" | "profile";
+  name: "home" | "bot" | "hot" | "basket" | "profile";
 };
 
 const items: NavItem[] = [
   { href: "/", label: "Home", name: "home" },
   { href: "/chatbot", label: "Chat bot", name: "bot" },
   { href: "/hot", label: "Hot", name: "hot" },
-  { href: "/basket", label: "Bill", name: "bill" },
+  { href: "/basket", label: "Basket", name: "basket" },
   { href: "/profile", label: "Profile", name: "profile" },
 ];
 
@@ -34,9 +34,9 @@ const ICON_PATHS: Record<
     active: "/icons/bold/heart.svg",
     inactive: "/icons/outline/heart.svg",
   },
-  bill: {
-    active: "/icons/bold/receipt-text.svg",
-    inactive: "/icons/bold/receipt-text.svg",
+  basket: {
+    active: "/icons/bold/bag-happy.svg",
+    inactive: "/icons/outline/bag-happy.svg",
   },
   profile: {
     active: "/icons/bold/frame.svg",
@@ -86,8 +86,10 @@ export default function BottomNav() {
                 {item.label}
               </span>
               <span
-                className={`h-[2px] w-10 rounded-full transition-all ${
-                  active ? "bg-primary" : "bg-transparent"
+                className={`h-[2px] w-10 rounded-full transition-[transform,background-color] duration-300 ease-out ${
+                  active
+                    ? "translate-y-0 bg-primary"
+                    : "translate-y-[4px] bg-transparent"
                 }`}
               />
             </Link>
