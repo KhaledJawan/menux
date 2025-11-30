@@ -1,6 +1,6 @@
 {
   "drink": [
-    { "id": "cold-drinks", "label": "Kalte Getränke", "image": "/design/kalte getränke.jpg" },
+    { "id": "cold-drinks", "label": "Kalte Getränke", "image": "/design/kalte-getraenke.jpg" },
     { "id": "hot-drinks", "label": "Warme Getränke", "image": "/design/warme getranke.jpg" },
     { "id": "non-alcoholic", "label": "Alkoholfreie Getränke", "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png" },
     { "id": "beer-draft", "label": "Bier vom Fass", "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png" },
