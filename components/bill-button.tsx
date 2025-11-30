@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Image from "next/image";
 import { useCart } from "./cart-context";
 
@@ -16,6 +16,15 @@ export default function BillButton() {
     placeOrder,
     clearCart,
   } = useCart();
+
+  const totalCount = useMemo(
+    () =>
+      [...items, ...orderedItems].reduce(
+        (sum, item) => sum + (item.quantity || 0),
+        0
+      ),
+    [items, orderedItems]
+  );
 
   const orderDisabled = items.length === 0;
   const paymentDisabled = orderedItems.length === 0;
@@ -36,7 +45,7 @@ export default function BillButton() {
       <button
         onClick={() => setOpen(true)}
         id="bill_btn"
-        className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-xs font-semibold text-white shadow-sm transition hover:bg-black/80"
+        className="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-xs font-semibold text-white shadow-sm transition hover:bg-black/80"
         aria-label="Bill"
       >
         <Image
@@ -47,6 +56,11 @@ export default function BillButton() {
           className="h-5 w-5 invert"
           priority
         />
+        {totalCount > 0 && (
+          <span className="pointer-events-none absolute bottom-0 left-0 inline-flex h-5 min-w-[18px] -translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full bg-red-500 px-[6px] text-[10px] font-bold leading-none text-white shadow ring-2 ring-card">
+            {totalCount > 99 ? "99+" : totalCount}
+          </span>
+        )}
       </button>
 
       {open && (

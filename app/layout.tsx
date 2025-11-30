@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="bg-background text-foreground">
         <Providers>
           <div className="mx-auto flex min-h-screen max-w-md flex-col bg-card pb-16 text-foreground">
-            <main className="flex min-h-0 flex-1 flex-col overflow-hidden px-4 pt-4 text-foreground">
+            <main className="flex min-h-0 flex-1 flex-col overflow-visible px-4 pt-4 text-foreground">
               {children}
             </main>
             <BottomNav />
