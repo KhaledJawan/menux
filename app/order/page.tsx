@@ -7,7 +7,7 @@ import categoriesData from "@/menuitems/categories.json";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { ArrowLeft, CupSoda, IceCream, Utensils, X } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const tabs: {
   id: "food" | "drink" | "other";
@@ -39,6 +39,10 @@ export default function HomePage() {
     }
     return null;
   });
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const touchDelta = useRef<{ dx: number; dy: number }>({ dx: 0, dy: 0 });
+  const pointerStart = useRef<{ x: number; y: number } | null>(null);
+  const pointerDelta = useRef<{ dx: number; dy: number }>({ dx: 0, dy: 0 });
 
   useEffect(() => {
     if (cueIndex === null) return;
@@ -54,6 +58,63 @@ export default function HomePage() {
     }, 400);
     return () => window.clearInterval(interval);
   }, [cueIndex]);
+
+  // Handle swipe gestures to switch tabs (left/right)
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    const t = e.touches[0];
+    touchStart.current = { x: t.clientX, y: t.clientY };
+    touchDelta.current = { dx: 0, dy: 0 };
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!touchStart.current) return;
+    const t = e.touches[0];
+    touchDelta.current = {
+      dx: t.clientX - touchStart.current.x,
+      dy: t.clientY - touchStart.current.y,
+    };
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart.current) return;
+    const { dx, dy } = touchDelta.current;
+    touchStart.current = null;
+    // Only horizontal, with a small vertical tolerance
+    if (Math.abs(dx) < 20 || Math.abs(dx) <= Math.abs(dy)) return;
+    const idx = tabs.findIndex((t) => t.id === activeTab);
+    if (idx === -1) return;
+    const nextIdx = dx < 0 ? idx + 1 : idx - 1;
+    if (nextIdx < 0 || nextIdx >= tabs.length) return;
+    setActiveTab(tabs[nextIdx].id);
+    setSelectedCategory(null);
+  };
+
+  // Mouse/pen swipe handler for desktop users
+  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    pointerStart.current = { x: e.clientX, y: e.clientY };
+    pointerDelta.current = { dx: 0, dy: 0 };
+  };
+
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!pointerStart.current || e.pointerType === "touch") return;
+    pointerDelta.current = {
+      dx: e.clientX - pointerStart.current.x,
+      dy: e.clientY - pointerStart.current.y,
+    };
+  };
+
+  const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!pointerStart.current || e.pointerType === "touch") return;
+    const { dx, dy } = pointerDelta.current;
+    pointerStart.current = null;
+    if (Math.abs(dx) < 20 || Math.abs(dx) <= Math.abs(dy)) return;
+    const idx = tabs.findIndex((t) => t.id === activeTab);
+    if (idx === -1) return;
+    const nextIdx = dx < 0 ? idx + 1 : idx - 1;
+    if (nextIdx < 0 || nextIdx >= tabs.length) return;
+    setActiveTab(tabs[nextIdx].id);
+    setSelectedCategory(null);
+  };
 
   // Structured categories by top-level tab
   const categoryItems = categoriesData as Record<
@@ -110,7 +171,15 @@ export default function HomePage() {
         <BillButton />
       </header>
 
-      <div className="flex w-full gap-2 overflow-x-auto text-xs">
+      <div
+        className="flex w-full gap-2 overflow-x-auto text-xs"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+      >
         {tabs.map((tab, idx) => {
           const isActive = activeTab === tab.id;
           const isCue = cueIndex === idx;
