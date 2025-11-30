@@ -22,6 +22,7 @@ export type MenuItem = RawMenuItem & {
   image?: string;
 };
 
+/** Map raw JSON items into normalized menu items with defaults. */
 const mapItems = (data: RawMenuItem[], category: Category): MenuItem[] =>
   data.map((item) => ({
     ...item,

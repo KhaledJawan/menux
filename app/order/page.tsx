@@ -1,12 +1,12 @@
 "use client";
 
 import BillButton from "@/components/bill-button";
-import { menuItems, type MenuItem } from "@/lib/menu";
 import { useCart } from "@/components/cart-context";
 import Image from "next/image";
-import { useMemo, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { ArrowLeft, CupSoda, IceCream, Utensils, X } from "lucide-react";
+import { useMemo, useState } from "react";
+import { menuItems, type MenuItem } from "@/lib/menu";
 import categoriesData from "@/menuitems/categories.json";
 
 const tabs: {
@@ -20,6 +20,7 @@ const tabs: {
 ];
 
 export default function HomePage() {
+  // UI state for tabs, category drilldown, modal, sizing, and notes
   const [activeTab, setActiveTab] = useState<"food" | "drink" | "other">(
     "drink"
   );
@@ -30,11 +31,13 @@ export default function HomePage() {
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useCart();
 
+  // Structured categories by top-level tab
   const categoryItems = categoriesData as Record<
     "food" | "drink" | "other",
     { id: string; label: string; image: string }[]
   >;
 
+  // Items filtered by selected top tab and chosen subcategory
   const filtered = useMemo(() => {
     const base =
       activeTab === "other"
@@ -46,6 +49,7 @@ export default function HomePage() {
     return base.filter((item) => item.categories?.includes(selectedCategory));
   }, [activeTab, selectedCategory]);
 
+  // Modal open handler
   const openItem = (item: MenuItem) => {
     setSelectedItem(item);
     setSelectedSize("normal");
@@ -53,6 +57,7 @@ export default function HomePage() {
     setQuantity(1);
   };
 
+  // Persist item(s) into cart with selected size and quantity
   const handleAddToBasket = () => {
     if (!selectedItem) return;
     const price =
@@ -97,17 +102,18 @@ export default function HomePage() {
                   ? "flex-[1.4] bg-foreground font-semibold text-background"
                   : "flex-none bg-muted text-foreground"
               }`}
-              style={{
-                width: isActive ? undefined : 60,
-              }}
-            >
-              <tab.icon className="h-5 w-5" aria-hidden />
-              {isActive ? <span className="truncate">{tab.label}</span> : null}
-            </button>
-          );
-        })}
-      </div>
+            style={{
+              width: isActive ? undefined : 60,
+            }}
+          >
+            <tab.icon className="h-5 w-5" aria-hidden />
+            {isActive ? <span className="truncate">{tab.label}</span> : null}
+          </button>
+        );
+      })}
+    </div>
 
+      {/* Subcategory bar with back button + centered label */}
       {selectedCategory && (
         <div className="relative flex items-center justify-center pb-1">
           <button
@@ -123,6 +129,7 @@ export default function HomePage() {
         </div>
       )}
 
+      {/* Category or item grid */}
       <section className="grid min-h-0 flex-1 grid-cols-2 gap-3 overflow-y-auto pb-4">
         {!selectedCategory &&
           categoryCards.map((cat) => (
@@ -188,6 +195,7 @@ export default function HomePage() {
           ))}
       </section>
 
+      {/* Item overlay */}
       {selectedItem && (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 px-4 backdrop-blur">
           <div className="flex max-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-[28px] bg-card shadow-2xl">

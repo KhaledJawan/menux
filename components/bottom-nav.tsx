@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
 type NavItem = {
   href: string;
@@ -71,6 +71,7 @@ export default function BottomNav() {
               href={item.href}
               className="flex flex-1 flex-col items-center gap-1 text-[11px]"
             >
+              {/* Icon + label with animated underline */}
               <NavIcon name={item.name} active={active} />
               <span
                 className={`transition-colors ${

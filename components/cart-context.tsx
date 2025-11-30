@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState, ReactNode } from "react";
+import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 
 export type CartItem = {
   id: string;
@@ -9,6 +9,10 @@ export type CartItem = {
   quantity: number;
 };
 
+/**
+ * Public shape of the cart context.
+ * Tracks pending items, ordered items, totals, and exposes mutation helpers.
+ */
 type CartContextType = {
   items: CartItem[];
   orderedItems: CartItem[];
@@ -24,9 +28,11 @@ type CartContextType = {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: ReactNode }) {
+  // State buckets: current basket + already-ordered items
   const [items, setItems] = useState<CartItem[]>([]);
   const [orderedItems, setOrderedItems] = useState<CartItem[]>([]);
 
+  // Add or increment an item in the basket
   const addItem = (item: Omit<CartItem, "quantity">) => {
     setItems((prev) => {
       const existing = prev.find((i) => i.id === item.id);
@@ -39,10 +45,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
     });
   };
 
+  // Remove a line item entirely
   const removeItem = (id: string) => {
     setItems((prev) => prev.filter((i) => i.id !== id));
   };
 
+  // Update quantity; drop item if zeroed out
   const updateQuantity = (id: string, quantity: number) => {
     setItems((prev) =>
       prev
@@ -51,16 +59,20 @@ export function CartProvider({ children }: { children: ReactNode }) {
     );
   };
 
+  // Reset basket
   const clearCart = () => setItems([]);
 
+  // Move basket items into ordered list
   const placeOrder = () => {
     if (items.length === 0) return;
     setOrderedItems((prev) => [...prev, ...items]);
     setItems([]);
   };
 
+  // Reset ordered history
   const clearOrders = () => setOrderedItems([]);
 
+  // Aggregate price for current basket
   const total = useMemo(
     () => items.reduce((sum, i) => sum + i.price * i.quantity, 0),
     [items]

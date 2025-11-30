@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useCart } from "./cart-context";
 
 export default function BillButton() {
+  // Local UI state for overlay
   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"order" | "payment">("order");
   const {
@@ -17,6 +18,7 @@ export default function BillButton() {
     clearCart,
   } = useCart();
 
+  // Total count of items across basket + ordered for badge display
   const totalCount = useMemo(
     () =>
       [...items, ...orderedItems].reduce(
@@ -26,6 +28,7 @@ export default function BillButton() {
     [items, orderedItems]
   );
 
+  // Derived flags for disabling actions
   const orderDisabled = items.length === 0;
   const paymentDisabled = orderedItems.length === 0;
   const tabItems = activeTab === "order" ? items : orderedItems;

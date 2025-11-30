@@ -1,27 +1,31 @@
 "use client";
 
 import BillButton from "@/components/bill-button";
-import { menuItems, type MenuItem } from "@/lib/menu";
 import { useCart } from "@/components/cart-context";
-import Image from "next/image";
-import { useMemo, useState } from "react";
-import { X, Search, Medal } from "lucide-react";
+import { menuItems, type MenuItem } from "@/lib/menu";
 import topIds from "@/menuitems/top.json";
+import Image from "next/image";
+import { Medal, Search, X } from "lucide-react";
+import { useMemo, useState } from "react";
 
 export default function TopPage() {
   const { addItem } = useCart();
+  // UI state for modal, sizing, note, quantity, and tab selection
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
   const [selectedSize, setSelectedSize] = useState<string>("normal");
   const [note, setNote] = useState("");
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState<"drink" | "search">("drink");
   const [searchQuery, setSearchQuery] = useState("");
+
+  // Prepare top items list from IDs
   const topSet = useMemo(() => new Set((topIds as string[]) || []), []);
   const filteredTop = useMemo(
     () => menuItems.filter((i) => topSet.has(i.id)),
     [topSet]
   );
 
+  // Search within the top list
   const searchResults = useMemo(() => {
     if (activeTab !== "search") return [];
     const query = searchQuery.trim().toLowerCase();
@@ -33,6 +37,7 @@ export default function TopPage() {
     );
   }, [activeTab, filteredTop, searchQuery]);
 
+  // Modal open handler
   const openItem = (item: MenuItem) => {
     setSelectedItem(item);
     setSelectedSize("normal");
@@ -40,6 +45,7 @@ export default function TopPage() {
     setQuantity(1);
   };
 
+  // Persist item(s) into cart with selected size and quantity
   const handleAddToBasket = () => {
     if (!selectedItem) return;
     const price =
@@ -99,6 +105,7 @@ export default function TopPage() {
         })}
       </div>
 
+      {/* Search input (only for search tab) */}
       {activeTab === "search" && (
         <div className="space-y-2">
           <div className="flex items-center gap-2 rounded-2xl border border-border bg-card px-3 py-2">
@@ -118,6 +125,7 @@ export default function TopPage() {
         </div>
       )}
 
+      {/* Items grid (top or search results) */}
       <section className="grid grid-cols-2 gap-3 pb-4">
         {(activeTab === "search" ? searchResults : filteredTop).map((item) => (
           <article
@@ -164,6 +172,7 @@ export default function TopPage() {
         ))}
       </section>
 
+      {/* Item overlay */}
       {selectedItem && (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 px-4 backdrop-blur">
           <div className="flex max-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-[28px] bg-card shadow-2xl">
