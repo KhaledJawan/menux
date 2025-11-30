@@ -67,8 +67,7 @@ export default function HomePage() {
     setSelectedItem(null);
   };
 
-  const categoryCards =
-    activeTab === "search" ? [] : categoryItems[activeTab as "food" | "drink" | "other"];
+  const categoryCards = categoryItems[activeTab];
 
   return (
     <div className="flex h-full min-h-0 flex-col space-y-4 overflow-hidden">
