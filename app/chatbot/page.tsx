@@ -68,7 +68,7 @@ export default function ChatbotPage() {
   };
 
   return (
-    <div className="flex h-[calc(100vh-5rem)] flex-col">
+    <div className="flex min-h-[calc(100vh-5rem)] flex-col">
       <header className="mb-2">
         <h1 className="text-xl font-semibold text-foreground">Chat bot</h1>
         <p className="text-xs text-muted-foreground">
@@ -76,7 +76,7 @@ export default function ChatbotPage() {
         </p>
       </header>
 
-      <div className="flex-1 space-y-2 overflow-y-auto rounded-2xl border border-border bg-card p-3 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)]">
+      <div className="flex-1 space-y-2 rounded-2xl border border-border bg-card p-3 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)]">
         {messages.map((m) => (
           <div
             key={m.id}

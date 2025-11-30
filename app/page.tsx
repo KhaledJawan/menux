@@ -2,18 +2,53 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function LandingPage() {
+  const [langOpen, setLangOpen] = useState(false);
+  const languages = [
+    { id: "en", label: "English", default: true },
+    { id: "de", label: "Deutsch" },
+    { id: "lb", label: "Lëtzebuergesch" },
+    { id: "fr", label: "Français" },
+    { id: "fa", label: "فارسی" },
+    { id: "ar", label: "العربية" },
+  ];
+
+  const handleMenuClick = () => {
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem("fromStarterIntro", "1");
+    }
+  };
+
   return (
     <div className="mx-auto flex h-[calc(100vh-64px)] max-w-sm flex-col bg-card px-4 py-6 text-foreground">
       {/* Header */}
       <header className="mb-6 flex items-center justify-between gap-3">
         <h1 className="text-xl font-semibold">Menux</h1>
-        <div className="flex items-center gap-2 rounded-2xl border border-border px-3 py-2 text-sm shadow-sm">
-          <span role="img" aria-hidden className="text-lg">
-            🌐
-          </span>
-          <span className="font-semibold">English</span>
+        <div className="relative">
+          <button
+            onClick={() => setLangOpen((v) => !v)}
+            className="flex items-center gap-2 rounded-2xl border border-border px-3 py-2 text-sm font-semibold shadow-sm"
+          >
+            <span role="img" aria-hidden className="text-lg">
+              🌐
+            </span>
+            <span>Language</span>
+          </button>
+          {langOpen && (
+            <div className="absolute right-0 top-12 z-20 w-48 rounded-2xl border border-border bg-card text-sm shadow-lg">
+              {languages.map((lang) => (
+                <button
+                  key={lang.id}
+                  className="flex w-full items-center justify-between px-3 py-2 text-left text-foreground hover:bg-muted"
+                >
+                  <span>{lang.label}</span>
+                  {lang.default ? <span className="text-primary">✓</span> : null}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </header>
 
@@ -52,6 +87,7 @@ export default function LandingPage() {
             </Link>
             <Link
               href="/order"
+              onClick={handleMenuClick}
               className="max-w-[180px] flex h-14 flex-1 items-center justify-center rounded-[28px] bg-black px-4 text-center text-base font-semibold text-white shadow-sm transition hover:bg-black/85"
             >
               Menu

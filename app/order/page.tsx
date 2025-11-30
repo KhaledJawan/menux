@@ -2,12 +2,12 @@
 
 import BillButton from "@/components/bill-button";
 import { useCart } from "@/components/cart-context";
+import { menuItems, type MenuItem } from "@/lib/menu";
+import categoriesData from "@/menuitems/categories.json";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { ArrowLeft, CupSoda, IceCream, Utensils, X } from "lucide-react";
-import { useMemo, useState } from "react";
-import { menuItems, type MenuItem } from "@/lib/menu";
-import categoriesData from "@/menuitems/categories.json";
+import { useEffect, useMemo, useState } from "react";
 
 const tabs: {
   id: "food" | "drink" | "other";
@@ -30,6 +30,30 @@ export default function HomePage() {
   const [note, setNote] = useState("");
   const [quantity, setQuantity] = useState(1);
   const { addItem } = useCart();
+  const [cueIndex, setCueIndex] = useState<number | null>(() => {
+    if (typeof window === "undefined") return null;
+    const fromStarter = window.sessionStorage.getItem("fromStarterIntro");
+    if (fromStarter) {
+      window.sessionStorage.removeItem("fromStarterIntro");
+      return 0;
+    }
+    return null;
+  });
+
+  useEffect(() => {
+    if (cueIndex === null) return;
+    let idx = cueIndex;
+    const interval = window.setInterval(() => {
+      idx += 1;
+      if (idx >= tabs.length) {
+        setCueIndex(null);
+        window.clearInterval(interval);
+      } else {
+        setCueIndex(idx);
+      }
+    }, 400);
+    return () => window.clearInterval(interval);
+  }, [cueIndex]);
 
   // Structured categories by top-level tab
   const categoryItems = categoriesData as Record<
@@ -87,8 +111,13 @@ export default function HomePage() {
       </header>
 
       <div className="flex w-full gap-2 overflow-x-auto text-xs">
-        {tabs.map((tab) => {
+        {tabs.map((tab, idx) => {
           const isActive = activeTab === tab.id;
+          const isCue = cueIndex === idx;
+          const baseColor = isActive
+            ? "bg-foreground font-semibold text-background"
+            : "bg-muted text-foreground";
+          const colorClass = isCue ? "bg-blue-500 text-white animate-pulse" : baseColor;
           return (
             <button
               key={tab.id}
@@ -98,20 +127,18 @@ export default function HomePage() {
               }}
               aria-label={tab.label}
               className={`flex h-[60px] min-w-[60px] items-center justify-center gap-2 whitespace-nowrap rounded-[14px] px-4 text-sm shadow-sm transition-all duration-300 ease-out ${
-                isActive
-                  ? "flex-[1.4] bg-foreground font-semibold text-background"
-                  : "flex-none bg-muted text-foreground"
-              }`}
-            style={{
-              width: isActive ? undefined : 60,
-            }}
-          >
-            <tab.icon className="h-5 w-5" aria-hidden />
-            {isActive ? <span className="truncate">{tab.label}</span> : null}
-          </button>
-        );
-      })}
-    </div>
+                isActive ? "flex-[1.4]" : "flex-none"
+              } ${colorClass}`}
+              style={{
+                width: isActive ? undefined : 60,
+              }}
+            >
+              <tab.icon className="h-5 w-5" aria-hidden />
+              {isActive ? <span className="truncate">{tab.label}</span> : null}
+            </button>
+          );
+        })}
+      </div>
 
       {/* Subcategory bar with back button + centered label */}
       {selectedCategory && (

@@ -16,7 +16,9 @@ export default function BillButton() {
     total,
     placeOrder,
     clearCart,
+    markPaid,
   } = useCart();
+  const [paidMessage, setPaidMessage] = useState("");
 
   // Total count of items across basket + ordered for badge display
   const totalCount = useMemo(
@@ -31,6 +33,7 @@ export default function BillButton() {
   // Derived flags for disabling actions
   const orderDisabled = items.length === 0;
   const paymentDisabled = orderedItems.length === 0;
+  const hasPaymentCue = orderedItems.length > 0;
   const tabItems = activeTab === "order" ? items : orderedItems;
   const tabTotal =
     activeTab === "order"
@@ -40,7 +43,14 @@ export default function BillButton() {
   const handlePlaceOrder = () => {
     if (orderDisabled) return;
     placeOrder();
-    setActiveTab("payment");
+    // Stay on order tab; payment tab will pulse to draw attention.
+  };
+
+  const handlePayment = () => {
+    if (paymentDisabled) return;
+    markPaid();
+    setPaidMessage("Payment successful. Thank you for your payment.");
+    setTimeout(() => setPaidMessage(""), 2500);
   };
 
   return (
@@ -98,6 +108,16 @@ export default function BillButton() {
               },
             ].map((tab) => {
               const active = activeTab === tab.id;
+              const cue = tab.id === "payment" && hasPaymentCue;
+              const iconStyle =
+                active && !cue
+                  ? undefined
+                  : cue && !active
+                    ? {
+                        filter:
+                          "invert(39%) sepia(73%) saturate(2281%) hue-rotate(191deg) brightness(93%) contrast(98%)",
+                      }
+                    : undefined;
               return (
                 <button
                   key={tab.id}
@@ -105,6 +125,8 @@ export default function BillButton() {
                   className={`flex h-[60px] min-w-[60px] flex-1 items-center justify-center gap-2 rounded-[14px] px-4 text-sm font-semibold shadow-sm transition ${
                     active
                       ? "bg-foreground text-background"
+                    : cue
+                        ? "bg-muted text-blue-600 ring-2 ring-blue-500 animate-pulse"
                       : "bg-muted text-foreground"
                   }`}
                 >
@@ -114,6 +136,7 @@ export default function BillButton() {
                     width={20}
                     height={20}
                     className={`h-5 w-5 ${active ? "invert" : ""}`}
+                    style={iconStyle}
                   />
                   <span>{tab.label}</span>
                 </button>
@@ -122,6 +145,16 @@ export default function BillButton() {
             </div>
 
             <div className="flex-1 space-y-3 overflow-y-auto px-5 py-4">
+              {activeTab === "payment" && orderedItems.length > 0 && (
+                <p className="text-[11px] text-muted-foreground">
+                  Your order is received. You can pay anytime before you leave—no rush if you want to add more.
+                </p>
+              )}
+              {activeTab === "payment" && orderedItems.length > 0 && (
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                  Order history
+                </h3>
+              )}
               {tabItems.length === 0 && (
                 <p className="text-xs text-muted-foreground">
                   {activeTab === "order"
@@ -198,6 +231,7 @@ export default function BillButton() {
                 </button>
               ) : (
                 <button
+                  onClick={handlePayment}
                   disabled={paymentDisabled}
                   className={`w-full rounded-[16px] py-3 text-sm font-semibold shadow-sm transition ${
                     paymentDisabled
@@ -220,6 +254,11 @@ export default function BillButton() {
                 <button className="w-full rounded-full border border-border py-2 text-[11px] font-medium text-muted-foreground hover:border-foreground hover:text-foreground">
                   Payment options
                 </button>
+              )}
+              {paidMessage && (
+                <p className="text-center text-xs font-semibold text-primary">
+                  {paidMessage}
+                </p>
               )}
             </div>
           </div>

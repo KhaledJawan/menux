@@ -23,6 +23,9 @@ type CartContextType = {
   placeOrder: () => void;
   clearOrders: () => void;
   total: number;
+  status: "free" | "reserved" | "in-use";
+  setStatus: (status: "free" | "reserved" | "in-use") => void;
+  markPaid: () => void;
 };
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -31,6 +34,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // State buckets: current basket + already-ordered items
   const [items, setItems] = useState<CartItem[]>([]);
   const [orderedItems, setOrderedItems] = useState<CartItem[]>([]);
+  const [status, setStatus] = useState<"free" | "reserved" | "in-use">("free");
 
   // Add or increment an item in the basket
   const addItem = (item: Omit<CartItem, "quantity">) => {
@@ -67,10 +71,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
     if (items.length === 0) return;
     setOrderedItems((prev) => [...prev, ...items]);
     setItems([]);
+    setStatus("in-use");
   };
 
   // Reset ordered history
   const clearOrders = () => setOrderedItems([]);
+
+  // Mark payment complete: clear ordered list and free the table
+  const markPaid = () => {
+    clearOrders();
+    setStatus("free");
+  };
 
   // Aggregate price for current basket
   const total = useMemo(
@@ -87,7 +98,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
     clearCart,
     placeOrder,
     clearOrders,
+    markPaid,
     total,
+    status,
+    setStatus,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
