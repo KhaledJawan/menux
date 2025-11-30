@@ -3,17 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useCart } from "./cart-context";
 
 type NavItem = {
   href: string;
   label: string;
-  name: "home" | "bot" | "top" | "profile";
+  name: "home" | "receipt" | "top" | "profile";
 };
 
-const items: NavItem[] = [
+const navItems: NavItem[] = [
   { href: "/order", label: "Home", name: "home" },
   { href: "/top", label: "Top", name: "top" },
-  { href: "/chatbot", label: "Chat bot", name: "bot" },
+  { href: "/receipt", label: "Receipt", name: "receipt" },
   { href: "/profile", label: "Profile", name: "profile" },
 ];
 
@@ -25,9 +26,9 @@ const ICON_PATHS: Record<
     active: "/icons/bold/home.svg",
     inactive: "/icons/outline/home.svg",
   },
-  bot: {
-    active: "/icons/bold/bot.svg",
-    inactive: "/icons/outline/bot-line.svg",
+  receipt: {
+    active: "/icons/bold/receipt-disscount.svg",
+    inactive: "/icons/outline/receipt-disscount.svg",
   },
   top: {
     active: "/icons/bold/medal-star.svg",
@@ -54,22 +55,34 @@ function NavIcon({ name, active }: { name: NavItem["name"]; active: boolean }) {
 }
 
 export default function BottomNav() {
+  const { items, orderedItems } = useCart();
   const pathname = usePathname();
   if (pathname === "/") return null;
+  const totalCount = [...items, ...orderedItems].reduce(
+    (sum, item) => sum + (item.quantity || 0),
+    0
+  );
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-20 border-t border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex max-w-md items-center justify-between px-4 py-2">
-        {items.map((item) => {
+        {navItems.map((item) => {
           const active = pathname.startsWith(item.href);
           return (
             <Link
               key={item.href}
               href={item.href}
-              className="flex flex-1 flex-col items-center gap-1 text-[11px]"
+              className="relative flex flex-1 flex-col items-center gap-1 text-[11px]"
             >
               {/* Icon + label with animated underline */}
-              <NavIcon name={item.name} active={active} />
+              <span className="relative inline-flex items-center justify-center">
+                <NavIcon name={item.name} active={active} />
+                {item.name === "receipt" && totalCount > 0 && (
+                  <span className="absolute -right-1.5 -top-1.5 inline-flex h-4 min-w-[16px] items-center justify-center rounded-full bg-red-500 px-[4px] text-[10px] font-bold leading-none text-white shadow ring-2 ring-card">
+                    {totalCount > 99 ? "99+" : totalCount}
+                  </span>
+                )}
+              </span>
               <span
                 className={`transition-colors ${
                   active

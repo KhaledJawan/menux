@@ -1,6 +1,5 @@
 "use client";
 
-import BillButton from "@/components/bill-button";
 import { useCart } from "@/components/cart-context";
 import { menuItems, type MenuItem } from "@/lib/menu";
 import categoriesData from "@/menuitems/categories.json";
@@ -8,6 +7,7 @@ import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { ArrowLeft, CupSoda, IceCream, Utensils, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
+import ChatOverlay from "@/components/chat-overlay";
 
 const tabs: {
   id: "food" | "drink" | "other";
@@ -181,7 +181,7 @@ export default function HomePage() {
             Table 24
           </span>
         </div>
-        <BillButton />
+        <ChatOverlay />
       </header>
 
       <div

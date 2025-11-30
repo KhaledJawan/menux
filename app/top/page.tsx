@@ -1,12 +1,12 @@
 "use client";
 
-import BillButton from "@/components/bill-button";
 import { useCart } from "@/components/cart-context";
 import { menuItems, type MenuItem } from "@/lib/menu";
 import topIds from "@/menuitems/top.json";
 import Image from "next/image";
 import { Medal, Search, X } from "lucide-react";
 import { useMemo, useState } from "react";
+import ChatOverlay from "@/components/chat-overlay";
 
 export default function TopPage() {
   const { addItem } = useCart();
@@ -69,7 +69,7 @@ export default function TopPage() {
             Table 24
           </span>
         </div>
-        <BillButton />
+        <ChatOverlay />
       </header>
 
       <div className="flex w-full gap-2 overflow-x-auto text-xs">
