@@ -7,13 +7,13 @@ import Image from "next/image";
 type NavItem = {
   href: string;
   label: string;
-  name: "home" | "bot" | "hot" | "profile";
+  name: "home" | "bot" | "top" | "profile";
 };
 
 const items: NavItem[] = [
   { href: "/", label: "Home", name: "home" },
+  { href: "/top", label: "Top", name: "top" },
   { href: "/chatbot", label: "Chat bot", name: "bot" },
-  { href: "/hot", label: "Hot", name: "hot" },
   { href: "/profile", label: "Profile", name: "profile" },
 ];
 
@@ -29,9 +29,9 @@ const ICON_PATHS: Record<
     active: "/icons/bold/bot.svg",
     inactive: "/icons/outline/bot-line.svg",
   },
-  hot: {
-    active: "/icons/bold/heart.svg",
-    inactive: "/icons/outline/heart.svg",
+  top: {
+    active: "/icons/bold/medal-star.svg",
+    inactive: "/icons/outline/medal-star.svg",
   },
   profile: {
     active: "/icons/bold/frame.svg",
@@ -55,6 +55,7 @@ function NavIcon({ name, active }: { name: NavItem["name"]; active: boolean }) {
 
 export default function BottomNav() {
   const pathname = usePathname();
+  if (pathname === "/") return null;
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-20 border-t border-border bg-card/95 backdrop-blur">
@@ -62,7 +63,7 @@ export default function BottomNav() {
         {items.map((item) => {
           const active =
             item.href === "/"
-              ? pathname === "/"
+              ? pathname === "/" || pathname.startsWith("/order")
               : pathname.startsWith(item.href);
           return (
             <Link
