@@ -10,6 +10,17 @@ export default function ProfilePage() {
   const { status } = useCart();
   const router = useRouter();
   const [showNotifications, setShowNotifications] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState("en");
+
+  const languages = [
+    { id: "en", label: "English" },
+    { id: "de", label: "Deutsch" },
+    { id: "lb", label: "Lëtzebuergesch" },
+    { id: "fr", label: "Français" },
+    { id: "fa", label: "فارسی" },
+    { id: "ar", label: "العربية" },
+  ];
 
   const statusOptions = [
     { id: "free", label: "Available" },
@@ -45,7 +56,7 @@ export default function ProfilePage() {
       </header>
 
       <section className="space-y-3 rounded-2xl border border-border bg-card p-3 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)]">
-        <h2 className="text-sm font-semibold text-foreground">Guest info</h2>
+        <h2 className="text-sm font-semibold text-foreground">Guest & Table</h2>
         <div className="space-y-2 text-xs text-muted-foreground">
           <div className="flex flex-col gap-1">
             <label className="text-[11px] text-muted-foreground">Name</label>
@@ -54,48 +65,66 @@ export default function ProfilePage() {
               placeholder="Optional"
             />
           </div>
-        </div>
-      </section>
-
-      <section className="space-y-3 rounded-2xl border border-border bg-card p-3 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)]">
-        <h2 className="text-sm font-semibold text-foreground">Table & status</h2>
-        <div className="flex items-center justify-between rounded-xl bg-muted px-3 py-2 text-xs text-foreground">
-          <span>Table 24</span>
-          <button className="rounded-full bg-foreground px-3 py-1 text-[11px] font-semibold text-background shadow-sm">
-            Request change
-          </button>
-        </div>
-        <p className="text-[11px] text-muted-foreground">Set the current state for this table/seat.</p>
-        <div className="flex flex-wrap gap-2">
-          {statusOptions.map((opt) => {
-            const active = status === opt.id;
-            const isFreeDefault = opt.id === "free";
-            return (
-              <button
-                key={opt.id}
-                onClick={() => handleStatusSelect(opt.id as typeof status)}
-                className={`rounded-full px-3 py-2 text-[11px] font-semibold transition ${
-                  active
-                    ? isFreeDefault
-                      ? "bg-blue-500 text-white"
-                      : "bg-foreground text-background shadow-sm"
-                    : "bg-muted text-foreground"
-                }`}
-              >
-                {opt.label}
-              </button>
-            );
-          })}
+          <div className="flex items-center justify-between rounded-xl bg-muted px-3 py-2 text-xs text-foreground">
+            <span>Table 24</span>
+            <button className="rounded-full bg-foreground px-3 py-1 text-[11px] font-semibold text-background shadow-sm">
+              Request change
+            </button>
+          </div>
+          <p className="text-[11px] text-muted-foreground">Set the current state for this table/seat.</p>
+          <div className="flex flex-wrap gap-2">
+            {statusOptions.map((opt) => {
+              const active = status === opt.id;
+              const isFreeDefault = opt.id === "free";
+              return (
+                <button
+                  key={opt.id}
+                  onClick={() => handleStatusSelect(opt.id as typeof status)}
+                  className={`rounded-full px-3 py-2 text-[11px] font-semibold transition ${
+                    active
+                      ? isFreeDefault
+                        ? "bg-blue-500 text-white"
+                        : "bg-foreground text-background shadow-sm"
+                      : "bg-muted text-foreground"
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       <section className="space-y-3 rounded-2xl border border-border bg-card p-3 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)]">
         <h2 className="text-sm font-semibold text-foreground">Language</h2>
-        <div className="flex items-center justify-between text-xs text-foreground">
-          <span>App language</span>
-          <button className="rounded-full bg-muted px-3 py-1 text-[11px] text-foreground">
-            EN (demo)
+        <div className="relative">
+          <button
+            onClick={() => setLangOpen((v) => !v)}
+            className="flex w-full items-center justify-between rounded-2xl border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground shadow-sm"
+          >
+            <span>App language</span>
+            <span>{languages.find((l) => l.id === selectedLang)?.label}</span>
           </button>
+          {langOpen && (
+            <div className="absolute right-0 top-12 z-20 w-48 rounded-2xl border border-border bg-card text-sm shadow-lg">
+              {languages.map((lang) => (
+                <button
+                  key={lang.id}
+                  onClick={() => {
+                    setSelectedLang(lang.id);
+                    setLangOpen(false);
+                  }}
+                  className="flex w-full items-center justify-between px-3 py-2 text-left text-foreground hover:bg-muted"
+                >
+                  <span>{lang.label}</span>
+                  {lang.id === selectedLang ? (
+                    <span className="text-primary">✓</span>
+                  ) : null}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
