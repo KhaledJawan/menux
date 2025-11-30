@@ -1,8 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { menuItems } from "@/lib/menu";
+import categoriesData from "@/menuitems/categories.json";
 
 export default function LandingPage() {
   const [langOpen, setLangOpen] = useState(false);
@@ -20,6 +22,25 @@ export default function LandingPage() {
       window.sessionStorage.setItem("fromStarterIntro", "1");
     }
   };
+
+  useEffect(() => {
+    const urls = new Set<string>();
+    // Prefetch category thumbnails
+    Object.values(categoriesData).forEach((arr) => {
+      arr.forEach((cat) => {
+        if (cat.image) urls.add(cat.image);
+      });
+    });
+    // Prefetch first batch of menu item images
+    menuItems.slice(0, 24).forEach((item) => {
+      if (item.image) urls.add(item.image);
+    });
+
+    urls.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
     <div className="mx-auto flex h-[calc(100vh-64px)] max-w-sm flex-col bg-card px-4 py-6 text-foreground">
