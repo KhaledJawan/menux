@@ -43,6 +43,7 @@ export default function HomePage() {
   const touchDelta = useRef<{ dx: number; dy: number }>({ dx: 0, dy: 0 });
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
   const pointerDelta = useRef<{ dx: number; dy: number }>({ dx: 0, dy: 0 });
+  const [dragOffset, setDragOffset] = useState(0);
 
   useEffect(() => {
     if (cueIndex === null) return;
@@ -64,6 +65,7 @@ export default function HomePage() {
     const t = e.touches[0];
     touchStart.current = { x: t.clientX, y: t.clientY };
     touchDelta.current = { dx: 0, dy: 0 };
+    setDragOffset(0);
   };
 
   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
@@ -73,12 +75,17 @@ export default function HomePage() {
       dx: t.clientX - touchStart.current.x,
       dy: t.clientY - touchStart.current.y,
     };
+    if (Math.abs(touchDelta.current.dx) > Math.abs(touchDelta.current.dy)) {
+      const limited = Math.max(-80, Math.min(80, touchDelta.current.dx));
+      setDragOffset(limited);
+    }
   };
 
   const handleTouchEnd = () => {
     if (!touchStart.current) return;
     const { dx, dy } = touchDelta.current;
     touchStart.current = null;
+    setDragOffset(0);
     // Only horizontal, with a small vertical tolerance
     if (Math.abs(dx) < 20 || Math.abs(dx) <= Math.abs(dy)) return;
     const idx = tabs.findIndex((t) => t.id === activeTab);
@@ -93,6 +100,7 @@ export default function HomePage() {
   const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
     pointerStart.current = { x: e.clientX, y: e.clientY };
     pointerDelta.current = { dx: 0, dy: 0 };
+    setDragOffset(0);
   };
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
@@ -101,12 +109,17 @@ export default function HomePage() {
       dx: e.clientX - pointerStart.current.x,
       dy: e.clientY - pointerStart.current.y,
     };
+    if (Math.abs(pointerDelta.current.dx) > Math.abs(pointerDelta.current.dy)) {
+      const limited = Math.max(-80, Math.min(80, pointerDelta.current.dx));
+      setDragOffset(limited);
+    }
   };
 
   const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
     if (!pointerStart.current || e.pointerType === "touch") return;
     const { dx, dy } = pointerDelta.current;
     pointerStart.current = null;
+    setDragOffset(0);
     if (Math.abs(dx) < 20 || Math.abs(dx) <= Math.abs(dy)) return;
     const idx = tabs.findIndex((t) => t.id === activeTab);
     if (idx === -1) return;
@@ -218,7 +231,11 @@ export default function HomePage() {
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
-        style={{ touchAction: "pan-y" }}
+        style={{
+          touchAction: "pan-y",
+          transform: `translateX(${dragOffset}px)`,
+          transition: dragOffset === 0 ? "transform 150ms ease-out" : "none",
+        }}
         className="flex min-h-0 flex-1 flex-col"
       >
         {selectedCategory && (
