@@ -11,7 +11,7 @@ type NavItem = {
 };
 
 const items: NavItem[] = [
-  { href: "/", label: "Home", name: "home" },
+  { href: "/order", label: "Home", name: "home" },
   { href: "/top", label: "Top", name: "top" },
   { href: "/chatbot", label: "Chat bot", name: "bot" },
   { href: "/profile", label: "Profile", name: "profile" },
@@ -61,10 +61,7 @@ export default function BottomNav() {
     <nav className="fixed bottom-0 left-0 right-0 z-20 border-t border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex max-w-md items-center justify-between px-4 py-2">
         {items.map((item) => {
-          const active =
-            item.href === "/"
-              ? pathname === "/" || pathname.startsWith("/order")
-              : pathname.startsWith(item.href);
+          const active = pathname.startsWith(item.href);
           return (
             <Link
               key={item.href}
