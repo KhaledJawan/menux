@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function LandingPage() {
   return (
-    <div className="mx-auto flex h-screen max-w-sm flex-col bg-card px-4 py-6 text-foreground">
+    <div className="mx-auto flex h-[calc(100vh-64px)] max-w-sm flex-col bg-card px-4 py-6 text-foreground">
       {/* Header */}
       <header className="mb-6 flex items-center justify-between gap-3">
         <h1 className="text-xl font-semibold">Menux</h1>
