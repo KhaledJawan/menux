@@ -25,11 +25,12 @@ export default function LandingPage() {
           className="object-cover"
           sizes="400px"
         />
-        </div>
+      </div>
 
-        <div className="mb-2">
-          <p className="text-2xl font-semibold">Table 24</p>
-        </div>
+      <div className="mb-2">
+        <p className="text-2xl font-semibold">Table 24</p>
+        <p className="text-sm text-muted-foreground">Welcome to XXX Restaurant</p>
+      </div>
         <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
           Lorem ipsum dolor sit amet consectetur. Neque placerat leo dapibus
           aliquet velit. Amet tempor mauris volutpat egestas et dui leo in
