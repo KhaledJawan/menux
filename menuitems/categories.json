@@ -3,42 +3,42 @@
     {
       "id": "cold-drinks",
       "label": "Kalte Getränke",
-      "image": "https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+      "image": "/design/cold-drinks.jpg"
     },
     {
       "id": "hot-drinks",
       "label": "Warme Getränke",
-      "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+      "image": "/design/hot-drinks.jpg"
     },
     {
       "id": "non-alcoholic",
       "label": "Alkoholfreie Getränke",
-      "image": "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+      "image": "/design/non-alcoholic.png"
     },
     {
       "id": "beer-draft",
       "label": "Bier vom Fass",
-      "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+      "image": "/design/beer-draft.jpg"
     },
     {
       "id": "beer-bottle",
       "label": "Bier in Flasche",
-      "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+      "image": "/design/beer-bottle.png"
     },
     {
       "id": "beer-special",
       "label": "Spezialbier",
-      "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+      "image": "/design/beer-special.jpg"
     },
     {
       "id": "wine-white",
       "label": "Weißwein",
-      "image": "/design/cola-zero.jpg"
+      "image": "/design/wine-white.jpg"
     },
     {
       "id": "wine-red",
       "label": "Rotwein",
-      "image": "/design/cola.jpg"
+      "image": "/design/wine-red.jpg"
     },
     {
       "id": "wine-rose",
@@ -65,7 +65,7 @@
     {
       "id": "appetizers",
       "label": "Vorspeisen",
-      "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+      "image": "/design/vorspeisen.jpg"
     },
     {
       "id": "salads",
@@ -95,49 +95,49 @@
     {
       "id": "vegetarian",
       "label": "Vegetarisch",
-      "image": "/design/cola-zero.jpg"
+      "image": "/design/vegetarian.jpeg"
     },
     {
       "id": "vegan",
       "label": "Vegan",
-      "image": "/design/cola.jpg"
+      "image": "/design/vegan.jpg"
     },
     {
       "id": "sides",
       "label": "Beilagen",
-      "image": "/design/kalte-getraenke.jpg"
+      "image": "/design/sides.jpg"
     },
     {
       "id": "desserts",
       "label": "Desserts",
-      "image": "/design/mineralwasser-still.jpg"
+      "image": "/design/desserts.jpg"
     },
     {
       "id": "kids",
       "label": "Kindergerichte",
-      "image": "/design/restaurantsample.jpg"
+      "image": "/design/kids.jpg"
     }
   ],
   "other": [
     {
       "id": "vorspeisen",
       "label": "Vorspeisen",
-      "image": "/design/warme getranke.jpg"
+      "image": "/design/vorspeisen.jpg"
     },
     {
       "id": "nachspeisen",
       "label": "Nachspeisen",
-      "image": "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+      "image": "/design/nachspeisen.jpg"
     },
     {
       "id": "ice",
       "label": "Ice",
-      "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+      "image": "/design/ice.jpg"
     },
     {
       "id": "cake",
       "label": "Cake",
-      "image": "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+      "image": "/design/cake.jpg"
     }
   ]
 }

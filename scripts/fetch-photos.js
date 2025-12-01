@@ -24,7 +24,9 @@ if (fs.existsSync(envPath)) {
 
 const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 if (!ACCESS_KEY) {
-  console.error("Set UNSPLASH_ACCESS_KEY in .env.local before running this script.");
+  console.error(
+    "Set UNSPLASH_ACCESS_KEY in .env.local before running this script."
+  );
   process.exit(1);
 }
 
@@ -47,7 +49,11 @@ async function fetchPhoto(query) {
 }
 
 async function fillMenuItems() {
-  const files = ["menuitems/drinks.json", "menuitems/foods.json", "menuitems/others.json"];
+  const files = [
+    "menuitems/drinks.json",
+    "menuitems/foods.json",
+    "menuitems/others.json",
+  ];
   for (const file of files) {
     const full = path.join(process.cwd(), file);
     const data = JSON.parse(fs.readFileSync(full, "utf8"));
