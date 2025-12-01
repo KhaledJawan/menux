@@ -70,27 +70,27 @@
     {
       "id": "salads",
       "label": "Salate",
-      "image": "/design/salads.jpg"
+      "image": "/design/vegetarian.jpeg"
     },
     {
       "id": "pizza",
       "label": "Pizza",
-      "image": "/design/pizza.jpg"
+      "image": "/design/restaurantsample.jpg"
     },
     {
       "id": "pasta",
       "label": "Pasta",
-      "image": "/design/pasta.jpg"
+      "image": "/design/vegan.jpg"
     },
     {
       "id": "meat",
       "label": "Fleischgerichte",
-      "image": "/design/meat.jpg"
+      "image": "/design/sides.jpg"
     },
     {
       "id": "fish",
       "label": "Fischgerichte",
-      "image": "/design/fish.jpg"
+      "image": "/design/wine-white.jpg"
     },
     {
       "id": "vegetarian",
