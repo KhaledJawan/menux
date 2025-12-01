@@ -1,19 +1,18 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 /**
- * Fetch photos from Unsplash for entries in pics.json and propagate to menuitems.
+ * Fetch photos from Unsplash for menuitems files (drinks/foods/others) that are missing photos.
+ * - Requires UNSPLASH_ACCESS_KEY in .env.local (not committed).
+ * - Only fills missing photos (images.unsplash.com), never overwrites existing photos.
+ * - Works directly on menuitems/drinks|foods|others.
+ *
  * Usage:
  *   node scripts/fetch-photos.js
- *
- * Behavior:
- * - Reads .env.local for UNSPLASH_ACCESS_KEY (not committed).
- * - Iterates menuitems/pics.json; if `link` is empty, fetches a photo by `name` and stores the URL.
- * - After updating pics.json, it updates menuitems (drinks/foods/others) photos by matching originalName.
  */
 
 const fs = require("fs");
 const path = require("path");
 
-// Manual .env.local loader
+// Load .env.local manually (do not commit your key)
 const envPath = path.join(process.cwd(), ".env.local");
 if (fs.existsSync(envPath)) {
   const lines = fs.readFileSync(envPath, "utf8").split("\n");
@@ -39,10 +38,6 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 async function fetchPhoto(query) {
   const res = await fetch(UNSPLASH_URL(query));
   if (!res.ok) {
-    if (res.status === 401 || res.status === 403) {
-      console.warn(`Unsplash auth/rate-limit error (${res.status}) for "${query}"`);
-      return null;
-    }
     console.warn(`Unsplash error ${res.status} for "${query}"`);
     return null;
   }
@@ -51,74 +46,36 @@ async function fetchPhoto(query) {
   return hit?.urls?.small ?? hit?.urls?.regular ?? null;
 }
 
-async function updatePics() {
-  const picsPath = path.join(process.cwd(), "menuitems/pics.json");
-  const pics = JSON.parse(fs.readFileSync(picsPath, "utf8"));
-  let changed = false;
-
-  for (const entry of pics) {
-    if (entry.link) continue; // already has a link
-    if (entry.type !== "item") continue; // skip categories
-
-    // Build a more descriptive query to improve matches
-    const query = `${entry.name} ${entry.group}`.trim();
-    const photo = await fetchPhoto(query);
-    if (photo) {
-      entry.link = photo;
-      changed = true;
-      console.log(`Added link for "${entry.name}"`);
-    } else {
-      console.log(`No photo found for "${entry.name}"`);
-    }
-    // Gentle throttle to avoid rate limiting
-    await sleep(800);
-  }
-
-  if (changed) {
-    fs.writeFileSync(picsPath, JSON.stringify(pics, null, 2));
-    console.log("Updated menuitems/pics.json");
-  } else {
-    console.log("No changes to pics.json");
-  }
-
-  return pics;
-}
-
-function propagateToMenuItems(pics) {
-  const files = [
-    { path: "menuitems/drinks.json", group: "drink" },
-    { path: "menuitems/foods.json", group: "food" },
-    { path: "menuitems/others.json", group: "other" },
-  ];
-
-  const map = new Map();
-  pics.forEach((p) => {
-    if (p.type === "item" && p.link) {
-      map.set(p.originalName, p.link);
-    }
-  });
-
+async function fillMenuItems() {
+  const files = ["menuitems/drinks.json", "menuitems/foods.json", "menuitems/others.json"];
   for (const file of files) {
-    const fullPath = path.join(process.cwd(), file.path);
-    const data = JSON.parse(fs.readFileSync(fullPath, "utf8"));
+    const full = path.join(process.cwd(), file);
+    const data = JSON.parse(fs.readFileSync(full, "utf8"));
     let changed = false;
-    data.forEach((item) => {
-      const link = map.get(item.name);
+    for (const item of data) {
+      if (Array.isArray(item.photos) && item.photos.length > 0) continue; // keep existing
+      const query = item.name || "food";
+      const link = await fetchPhoto(query);
       if (link) {
         item.photos = [link];
         changed = true;
+        console.log(`Added photo for "${item.name}"`);
+      } else {
+        console.warn(`No photo for "${item.name}"`);
       }
-    });
+      await sleep(250); // throttle
+    }
     if (changed) {
-      fs.writeFileSync(fullPath, JSON.stringify(data, null, 2));
-      console.log(`Updated ${file.path}`);
+      fs.writeFileSync(full, JSON.stringify(data, null, 2));
+      console.log(`Updated ${file}`);
+    } else {
+      console.log(`No changes to ${file}`);
     }
   }
 }
 
 async function main() {
-  const pics = await updatePics();
-  propagateToMenuItems(pics);
+  await fillMenuItems();
 }
 
 main().catch((err) => {

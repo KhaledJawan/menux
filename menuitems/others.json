@@ -10,7 +10,7 @@
     "hiddenDescription": "Garlic olive oil drizzle.",
     "price": 6.5,
     "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+      "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxCcnVzY2hldHRhfGVufDB8fHx8MTc2NDU3NDk3OHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -28,7 +28,7 @@
     "hiddenDescription": "Parsley and parmesan.",
     "price": 5.5,
     "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+      "https://images.unsplash.com/photo-1573140401552-3fab0b24306f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxHYXJsaWMlMjBCcmVhZHxlbnwwfHx8fDE3NjQ1NzQ5Nzl8MA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.5,
     "categories": [
@@ -46,7 +46,7 @@
     "hiddenDescription": "Golden fried.",
     "price": 7,
     "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+      "https://images.unsplash.com/photo-1734774924912-dcbb467f8599?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNb3p6YXJlbGxhJTIwU3RpY2tzfGVufDB8fHx8MTc2NDU3NDk3OXww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -64,7 +64,7 @@
     "hiddenDescription": "Balsamic glaze.",
     "price": 8,
     "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+      "https://images.unsplash.com/photo-1595587870672-c79b47875c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDYXByZXNlfGVufDB8fHx8MTc2NDU3NDk4MHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.7,
     "categories": [
@@ -81,9 +81,7 @@
     "description": "Grilled vegetable platter",
     "hiddenDescription": "Marinated seasonal veggies.",
     "price": 9,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "vorspeisen"
@@ -100,7 +98,7 @@
     "hiddenDescription": "Served with dip.",
     "price": 6.5,
     "photos": [
-      "/design/cola.jpg"
+      "https://images.unsplash.com/photo-1639024471283-03518883512d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxPbmlvbiUyMFJpbmdzfGVufDB8fHx8MTc2NDU3NDk4MXww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -118,7 +116,7 @@
     "hiddenDescription": "Ranch dip.",
     "price": 8.5,
     "photos": [
-      "/design/kalte-getraenke.jpg"
+      "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDaGlja2VuJTIwV2luZ3N8ZW58MHx8fHwxNzY0NTc0OTgzfDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -136,7 +134,7 @@
     "hiddenDescription": "Ask for today’s pick.",
     "price": 6,
     "photos": [
-      "/design/mineralwasser-still.jpg"
+      "https://images.unsplash.com/photo-1736752346246-61f4daedfde0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxTdXBwZSUyMGRlcyUyMFRhZ2VzfGVufDB8fHx8MTc2NDU3NDk4NHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.3,
     "categories": [
@@ -154,7 +152,7 @@
     "hiddenDescription": "Basil cream.",
     "price": 6,
     "photos": [
-      "/design/restaurantsample.jpg"
+      "https://images.unsplash.com/photo-1648822825892-ee88e97bdd34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUb21hdGVuc3VwcGV8ZW58MHx8fHwxNzY0NTc0OTg1fDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -172,7 +170,7 @@
     "hiddenDescription": "Hint of nutmeg.",
     "price": 6.5,
     "photos": [
-      "/design/warme getranke.jpg"
+      "https://images.unsplash.com/photo-1573630490626-24859ba0f58a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxLJUMzJUJDcmJpc3N1cHBlfGVufDB8fHx8MTc2NDU3NDk4NXww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -190,7 +188,7 @@
     "hiddenDescription": "Beans and pasta.",
     "price": 6.5,
     "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+      "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNaW5lc3Ryb25lfGVufDB8fHx8MTc2NDU3NDk4Nnww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -207,9 +205,7 @@
     "description": "Mascarpone, espresso, cocoa",
     "hiddenDescription": "Italian classic.",
     "price": 6.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "nachspeisen",
@@ -226,9 +222,7 @@
     "description": "Warm chocolate cake",
     "hiddenDescription": "Molten center.",
     "price": 6,
-    "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -245,9 +239,7 @@
     "description": "Apple strudel",
     "hiddenDescription": "Vanilla sauce.",
     "price": 6,
-    "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -264,9 +256,7 @@
     "description": "Cheesecake slice",
     "hiddenDescription": "Creamy baked.",
     "price": 5.5,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -283,9 +273,7 @@
     "description": "Creamy panna cotta",
     "hiddenDescription": "Berry coulis.",
     "price": 6,
-    "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "nachspeisen"
@@ -301,9 +289,7 @@
     "description": "Vanille, Schokolade, Erdbeere",
     "hiddenDescription": "Ice cream trio.",
     "price": 5,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "nachspeisen",
@@ -320,9 +306,7 @@
     "description": "Waffle with ice cream",
     "hiddenDescription": "Whipped cream.",
     "price": 6.5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -339,9 +323,7 @@
     "description": "Caramelized custard",
     "hiddenDescription": "Vanilla bean.",
     "price": 6.5,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "nachspeisen"
@@ -357,9 +339,7 @@
     "description": "Fresh fruit salad",
     "hiddenDescription": "Seasonal mix.",
     "price": 5.5,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.4,
     "categories": [
       "nachspeisen"

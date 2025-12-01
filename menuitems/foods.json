@@ -10,7 +10,7 @@
     "hiddenDescription": "Garlic olive oil drizzle.",
     "price": 6.5,
     "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+      "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxCcnVzY2hldHRhfGVufDB8fHx8MTc2NDU3NDk3OHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -28,7 +28,7 @@
     "hiddenDescription": "Parsley and parmesan.",
     "price": 5.5,
     "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+      "https://images.unsplash.com/photo-1573140401552-3fab0b24306f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxHYXJsaWMlMjBCcmVhZHxlbnwwfHx8fDE3NjQ1NzQ5Nzl8MA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.5,
     "categories": [
@@ -46,7 +46,7 @@
     "hiddenDescription": "Served with marinara.",
     "price": 7,
     "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+      "https://images.unsplash.com/photo-1734774924912-dcbb467f8599?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNb3p6YXJlbGxhJTIwU3RpY2tzfGVufDB8fHx8MTc2NDU3NDk3OXww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -64,7 +64,7 @@
     "hiddenDescription": "Balsamic glaze.",
     "price": 8,
     "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+      "https://images.unsplash.com/photo-1595587870672-c79b47875c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDYXByZXNlfGVufDB8fHx8MTc2NDU3NDk4MHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.7,
     "categories": [
@@ -81,9 +81,7 @@
     "description": "Grilled vegetables platter",
     "hiddenDescription": "Marinated seasonal veggies.",
     "price": 9,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "appetizers"
@@ -100,7 +98,7 @@
     "hiddenDescription": "Served with dip.",
     "price": 6.5,
     "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+      "https://images.unsplash.com/photo-1639024471283-03518883512d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxPbmlvbiUyMFJpbmdzfGVufDB8fHx8MTc2NDU3NDk4MXww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -118,7 +116,7 @@
     "hiddenDescription": "Served with ranch.",
     "price": 8.5,
     "photos": [
-      "/design/cola-zero.jpg"
+      "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDaGlja2VuJTIwV2luZ3N8ZW58MHx8fHwxNzY0NTc0OTgzfDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -136,7 +134,7 @@
     "hiddenDescription": "Ask for today’s pick.",
     "price": 6,
     "photos": [
-      "/design/cola.jpg"
+      "https://images.unsplash.com/photo-1736752346246-61f4daedfde0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxTdXBwZSUyMGRlcyUyMFRhZ2VzfGVufDB8fHx8MTc2NDU3NDk4NHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.3,
     "categories": [
@@ -154,7 +152,7 @@
     "hiddenDescription": "Creamy basil finish.",
     "price": 6,
     "photos": [
-      "/design/kalte-getraenke.jpg"
+      "https://images.unsplash.com/photo-1648822825892-ee88e97bdd34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUb21hdGVuc3VwcGV8ZW58MHx8fHwxNzY0NTc0OTg1fDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -172,7 +170,7 @@
     "hiddenDescription": "Hint of nutmeg.",
     "price": 6.5,
     "photos": [
-      "/design/mineralwasser-still.jpg"
+      "https://images.unsplash.com/photo-1573630490626-24859ba0f58a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxLJUMzJUJDcmJpc3N1cHBlfGVufDB8fHx8MTc2NDU3NDk4NXww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -190,7 +188,7 @@
     "hiddenDescription": "Beans and pasta.",
     "price": 6.5,
     "photos": [
-      "/design/restaurantsample.jpg"
+      "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNaW5lc3Ryb25lfGVufDB8fHx8MTc2NDU3NDk4Nnww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -208,7 +206,7 @@
     "hiddenDescription": "Creamy Caesar dressing.",
     "price": 9.5,
     "photos": [
-      "/design/warme getranke.jpg"
+      "https://images.unsplash.com/photo-1546793665-c74683f339c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDYWVzYXIlMjBTYWxhZHxlbnwwfHx8fDE3NjQ1NzQ5ODd8MA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -226,7 +224,7 @@
     "hiddenDescription": "Protein-packed.",
     "price": 11,
     "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
+      "https://images.unsplash.com/photo-1712746784937-aa56235fbab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDYWVzYXIlMjBDaGlja2VuJTIwU2FsYWR8ZW58MHx8fHwxNzY0NTc0OTg3fDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.7,
     "categories": [
@@ -244,7 +242,7 @@
     "hiddenDescription": "Light vinaigrette.",
     "price": 7.5,
     "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+      "https://images.unsplash.com/photo-1602663037968-4b067183c0a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxHciVDMyVCQ25lciUyMFNhbGF0fGVufDB8fHx8MTc2NDU3NDk4OHww&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.3,
     "categories": [
@@ -262,7 +260,7 @@
     "hiddenDescription": "Seasonal veggies.",
     "price": 8,
     "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+      "https://images.unsplash.com/photo-1752028935881-0674807b046c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxHZW1pc2NodGVyJTIwU2FsYXR8ZW58MHx8fHwxNzY0NTc0OTg5fDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.4,
     "categories": [
@@ -280,7 +278,7 @@
     "hiddenDescription": "With olives and egg.",
     "price": 10,
     "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+      "https://images.unsplash.com/photo-1626405142928-07de0f284441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaHVuZmlzY2hzYWxhdHxlbnwwfHx8fDE3NjQ1NzQ5ODl8MA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.5,
     "categories": [
@@ -297,9 +295,7 @@
     "description": "Farmer’s salad",
     "hiddenDescription": "Tomato, cucumber, feta.",
     "price": 9,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "salads"
@@ -316,7 +312,7 @@
     "hiddenDescription": "Herb pesto dressing.",
     "price": 9.5,
     "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+      "https://images.unsplash.com/photo-1707339088654-117df66bd55c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNb3p6YXJlbGxhJTIwU2FsYXR8ZW58MHx8fHwxNzY0NTc0OTkxfDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.5,
     "categories": [
@@ -334,7 +330,7 @@
     "hiddenDescription": "Citrus dressing.",
     "price": 10,
     "photos": [
-      "/design/cola-zero.jpg"
+      "https://images.unsplash.com/photo-1664683858107-adc23301a024?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxBdm9jYWRvJTIwU2FsYXR8ZW58MHx8fHwxNzY0NTc0OTkxfDA&ixlib=rb-4.1.0&q=80&w=400"
     ],
     "rate": 4.6,
     "categories": [
@@ -351,9 +347,7 @@
     "description": "Tomato, mozzarella, basil",
     "hiddenDescription": "Classic Italian.",
     "price": 10.5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "pizza",
@@ -370,9 +364,7 @@
     "description": "Salami-topped pizza",
     "hiddenDescription": "Tomato-mozzarella base.",
     "price": 11.5,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "pizza"
@@ -388,9 +380,7 @@
     "description": "Mushroom pizza",
     "hiddenDescription": "Garlic mushrooms.",
     "price": 11,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pizza",
@@ -407,9 +397,7 @@
     "description": "Tuna pizza",
     "hiddenDescription": "Onions and capers.",
     "price": 12,
-    "photos": [
-      "/design/restaurantsample.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "pizza",
@@ -426,9 +414,7 @@
     "description": "Ham and pineapple",
     "hiddenDescription": "Sweet-salty.",
     "price": 12,
-    "photos": [
-      "/design/warme getranke.jpg"
-    ],
+    "photos": [],
     "rate": 4.4,
     "categories": [
       "pizza"
@@ -444,9 +430,7 @@
     "description": "Ham pizza",
     "hiddenDescription": "Mozzarella and oregano.",
     "price": 12,
-    "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "pizza"
@@ -462,9 +446,7 @@
     "description": "Veggie pizza",
     "hiddenDescription": "Seasonal vegetables.",
     "price": 11.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pizza",
@@ -481,9 +463,7 @@
     "description": "Four cheese pizza",
     "hiddenDescription": "Rich and creamy.",
     "price": 12.5,
-    "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "pizza",
@@ -500,9 +480,7 @@
     "description": "Spicy salami pizza",
     "hiddenDescription": "Chili kick.",
     "price": 12.5,
-    "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pizza"
@@ -518,9 +496,7 @@
     "description": "BBQ chicken pizza",
     "hiddenDescription": "Smoky sauce.",
     "price": 12.8,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pizza"
@@ -536,9 +512,7 @@
     "description": "Pepperoni pizza",
     "hiddenDescription": "Spiced sausage.",
     "price": 12,
-    "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pizza"
@@ -554,9 +528,7 @@
     "description": "Rich meat ragu",
     "hiddenDescription": "Parmesan topping.",
     "price": 12,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pasta",
@@ -573,9 +545,7 @@
     "description": "Egg, bacon, pecorino",
     "hiddenDescription": "Creamy classic.",
     "price": 12.5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "pasta"
@@ -591,9 +561,7 @@
     "description": "Spicy tomato penne",
     "hiddenDescription": "Garlic and chili.",
     "price": 11.5,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "pasta",
@@ -610,9 +578,7 @@
     "description": "Layered pasta bake",
     "hiddenDescription": "Beef ragu, bechamel.",
     "price": 13,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "pasta",
@@ -629,9 +595,7 @@
     "description": "Creamy parmesan sauce",
     "hiddenDescription": "Butter and cream.",
     "price": 12.5,
-    "photos": [
-      "/design/restaurantsample.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pasta",
@@ -648,9 +612,7 @@
     "description": "Ham cream tortellini",
     "hiddenDescription": "Comfort classic.",
     "price": 12.5,
-    "photos": [
-      "/design/warme getranke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "pasta"
@@ -666,9 +628,7 @@
     "description": "Potato gnocchi tomato",
     "hiddenDescription": "Basil finish.",
     "price": 12,
-    "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pasta",
@@ -685,9 +645,7 @@
     "description": "Salmon pasta",
     "hiddenDescription": "Creamy dill sauce.",
     "price": 13.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "pasta",
@@ -704,9 +662,7 @@
     "description": "Basil pesto penne",
     "hiddenDescription": "Pine nuts and parmesan.",
     "price": 11.5,
-    "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "pasta",
@@ -723,9 +679,7 @@
     "description": "Breaded chicken/veal schnitzel",
     "hiddenDescription": "Lemon wedge.",
     "price": 14,
-    "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "meat"
@@ -741,9 +695,7 @@
     "description": "Schnitzel with mushroom sauce",
     "hiddenDescription": "Rich gravy.",
     "price": 14.5,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "meat"
@@ -759,9 +711,7 @@
     "description": "Schnitzel with pepper sauce",
     "hiddenDescription": "Spiced paprika gravy.",
     "price": 14.5,
-    "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "meat"
@@ -777,9 +727,7 @@
     "description": "Beef steak",
     "hiddenDescription": "Grilled to order.",
     "price": 18.5,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.8,
     "categories": [
       "meat"
@@ -795,9 +743,7 @@
     "description": "Grilled chicken breast",
     "hiddenDescription": "Herb marinade.",
     "price": 13.5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "meat"
@@ -813,9 +759,7 @@
     "description": "Pork steak",
     "hiddenDescription": "Rosemary butter.",
     "price": 13.5,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "meat"
@@ -831,9 +775,7 @@
     "description": "German sausage",
     "hiddenDescription": "With mustard.",
     "price": 11,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "meat"
@@ -849,9 +791,7 @@
     "description": "Sausage with curry sauce",
     "hiddenDescription": "Berlin style.",
     "price": 11.5,
-    "photos": [
-      "/design/restaurantsample.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "meat"
@@ -867,9 +807,7 @@
     "description": "Grilled beef burger",
     "hiddenDescription": "Lettuce, tomato.",
     "price": 12.5,
-    "photos": [
-      "/design/warme getranke.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "meat"
@@ -885,9 +823,7 @@
     "description": "Crispy chicken burger",
     "hiddenDescription": "Spicy mayo.",
     "price": 12,
-    "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "meat"
@@ -903,9 +839,7 @@
     "description": "Beef burger with cheese",
     "hiddenDescription": "Cheddar melt.",
     "price": 12.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "meat"
@@ -921,9 +855,7 @@
     "description": "Salmon fillet",
     "hiddenDescription": "Pan-seared.",
     "price": 17,
-    "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "fish"
@@ -939,9 +871,7 @@
     "description": "Fried fish, fries",
     "hiddenDescription": "Tartar sauce.",
     "price": 13.5,
-    "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "fish"
@@ -957,9 +887,7 @@
     "description": "Seared pike-perch",
     "hiddenDescription": "Lemon butter.",
     "price": 16.5,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "fish"
@@ -975,9 +903,7 @@
     "description": "Sautéed shrimp",
     "hiddenDescription": "Garlic and herbs.",
     "price": 15.5,
-    "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "fish"
@@ -993,9 +919,7 @@
     "description": "Fried calamari",
     "hiddenDescription": "Aioli dip.",
     "price": 13,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "fish",
@@ -1012,9 +936,7 @@
     "description": "Plant-based patty",
     "hiddenDescription": "Avocado spread.",
     "price": 12.5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegetarian"
@@ -1030,9 +952,7 @@
     "description": "Falafel plate",
     "hiddenDescription": "Hummus and salad.",
     "price": 12,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegetarian",
@@ -1049,9 +969,7 @@
     "description": "Sautéed vegetables",
     "hiddenDescription": "Herb oil finish.",
     "price": 11.5,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.4,
     "categories": [
       "vegetarian",
@@ -1068,9 +986,7 @@
     "description": "Seasonal veggie pasta",
     "hiddenDescription": "Tomato basil sauce.",
     "price": 11.5,
-    "photos": [
-      "/design/restaurantsample.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegetarian",
@@ -1087,9 +1003,7 @@
     "description": "Vegetable pizza",
     "hiddenDescription": "Colorful toppings.",
     "price": 11.5,
-    "photos": [
-      "/design/warme getranke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegetarian",
@@ -1106,9 +1020,7 @@
     "description": "Cheese spaetzle",
     "hiddenDescription": "Caramelized onions.",
     "price": 11,
-    "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "vegetarian"
@@ -1124,9 +1036,7 @@
     "description": "Potato pancakes",
     "hiddenDescription": "Apple sauce side.",
     "price": 9.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegetarian"
@@ -1142,9 +1052,7 @@
     "description": "Veggies, rice, sauce",
     "hiddenDescription": "Sesame dressing.",
     "price": 11.5,
-    "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "vegan"
@@ -1160,9 +1068,7 @@
     "description": "Coconut veggie curry",
     "hiddenDescription": "Jasmine rice.",
     "price": 12,
-    "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "vegan"
@@ -1178,9 +1084,7 @@
     "description": "Vegan pasta bowl",
     "hiddenDescription": "Tomato or pesto.",
     "price": 11.5,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegan",
@@ -1197,9 +1101,7 @@
     "description": "Plant-based schnitzel",
     "hiddenDescription": "Crispy coating.",
     "price": 12.5,
-    "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegan"
@@ -1215,9 +1117,7 @@
     "description": "Bean and veggie chili",
     "hiddenDescription": "Mild spice.",
     "price": 11.5,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "vegan"
@@ -1233,9 +1133,7 @@
     "description": "French fries",
     "hiddenDescription": "Crispy and golden.",
     "price": 4.5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "sides"
@@ -1251,9 +1149,7 @@
     "description": "Sweet potato fries",
     "hiddenDescription": "Smoky dip.",
     "price": 5,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "sides"
@@ -1269,9 +1165,7 @@
     "description": "Potato salad",
     "hiddenDescription": "Herbs and vinegar.",
     "price": 4.5,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.4,
     "categories": [
       "sides"
@@ -1287,9 +1181,7 @@
     "description": "Fried potatoes",
     "hiddenDescription": "Onions and herbs.",
     "price": 5,
-    "photos": [
-      "/design/restaurantsample.jpg"
-    ],
+    "photos": [],
     "rate": 4.4,
     "categories": [
       "sides"
@@ -1305,9 +1197,7 @@
     "description": "Steamed rice",
     "hiddenDescription": "Fluffy grains.",
     "price": 3.5,
-    "photos": [
-      "/design/warme getranke.jpg"
-    ],
+    "photos": [],
     "rate": 4.3,
     "categories": [
       "sides"
@@ -1323,9 +1213,7 @@
     "description": "Potato dumplings",
     "hiddenDescription": "Traditional side.",
     "price": 4.5,
-    "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
-    ],
+    "photos": [],
     "rate": 4.4,
     "categories": [
       "sides"
@@ -1341,9 +1229,7 @@
     "description": "Steamed vegetables",
     "hiddenDescription": "Lightly seasoned.",
     "price": 4.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.3,
     "categories": [
       "sides",
@@ -1361,9 +1247,7 @@
     "description": "Mascarpone, espresso, cocoa",
     "hiddenDescription": "Classic Italian dessert.",
     "price": 6.5,
-    "photos": [
-      "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
-    ],
+    "photos": [],
     "rate": 4.7,
     "categories": [
       "desserts"
@@ -1379,9 +1263,7 @@
     "description": "Warm chocolate cake",
     "hiddenDescription": "Molten center.",
     "price": 6,
-    "photos": [
-      "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1397,9 +1279,7 @@
     "description": "Apple strudel",
     "hiddenDescription": "Vanilla sauce.",
     "price": 6,
-    "photos": [
-      "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1415,9 +1295,7 @@
     "description": "Cheesecake",
     "hiddenDescription": "Creamy classic.",
     "price": 5.5,
-    "photos": [
-      "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1433,9 +1311,7 @@
     "description": "Creamy panna cotta",
     "hiddenDescription": "Berry coulis.",
     "price": 6,
-    "photos": [
-      "/design/cola-zero.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "desserts"
@@ -1451,9 +1327,7 @@
     "description": "Vanilla, chocolate, strawberry",
     "hiddenDescription": "Ice cream trio.",
     "price": 5,
-    "photos": [
-      "/design/cola.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "desserts"
@@ -1469,9 +1343,7 @@
     "description": "Waffle with ice cream",
     "hiddenDescription": "Whipped cream.",
     "price": 6.5,
-    "photos": [
-      "/design/kalte-getraenke.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1487,9 +1359,7 @@
     "description": "Kid’s pizza",
     "hiddenDescription": "Small margherita.",
     "price": 7,
-    "photos": [
-      "/design/mineralwasser-still.jpg"
-    ],
+    "photos": [],
     "rate": 4.6,
     "categories": [
       "kids",
@@ -1506,9 +1376,7 @@
     "description": "Kids nuggets and fries",
     "hiddenDescription": "Ketchup dip.",
     "price": 7.5,
-    "photos": [
-      "/design/restaurantsample.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "kids"
@@ -1524,9 +1392,7 @@
     "description": "Kid’s schnitzel",
     "hiddenDescription": "Served with fries.",
     "price": 7.5,
-    "photos": [
-      "/design/warme getranke.jpg"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "kids"
@@ -1542,9 +1408,7 @@
     "description": "Kids pasta tomato sauce",
     "hiddenDescription": "Parmesan on side.",
     "price": 7,
-    "photos": [
-      "/design/163e53d40b149680dee1a4d3fb95e92eada6c350.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "kids",
@@ -1561,9 +1425,7 @@
     "description": "Kid’s burger",
     "hiddenDescription": "Beef patty, cheese.",
     "price": 7.5,
-    "photos": [
-      "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
-    ],
+    "photos": [],
     "rate": 4.5,
     "categories": [
       "kids",
