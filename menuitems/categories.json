@@ -43,22 +43,22 @@
     {
       "id": "wine-rose",
       "label": "Rosé",
-      "image": "/design/kalte-getraenke.jpg"
+      "image": "/design/wine-rose.jpg"
     },
     {
       "id": "sparkling-aperitif",
       "label": "Sekt & Aperitifs",
-      "image": "/design/mineralwasser-still.jpg"
+      "image": "/design/sparkling-aperitif.jpg"
     },
     {
       "id": "spirits",
       "label": "Spirituosen",
-      "image": "/design/restaurantsample.jpg"
+      "image": "/design/spirits.jpg"
     },
     {
       "id": "cocktails",
       "label": "Cocktails",
-      "image": "/design/warme getranke.jpg"
+      "image": "/design/cocktails.jpg"
     }
   ],
   "food": [
@@ -70,27 +70,27 @@
     {
       "id": "salads",
       "label": "Salate",
-      "image": "/design/580e4d36ea8166b564197f15cbc215ac2a9b4ec1.png"
+      "image": "/design/salads.jpg"
     },
     {
       "id": "pizza",
       "label": "Pizza",
-      "image": "/design/6a2d23edc10e3c0665d8858c9bab2f1c5cdcda9d.png"
+      "image": "/design/pizza.jpg"
     },
     {
       "id": "pasta",
       "label": "Pasta",
-      "image": "/design/a4aef19361c0424009c6d35de4cc21f9603d6214.png"
+      "image": "/design/pasta.jpg"
     },
     {
       "id": "meat",
       "label": "Fleischgerichte",
-      "image": "/design/b09dc84574987a22dd1ce108952862dddac79b12.png"
+      "image": "/design/meat.jpg"
     },
     {
       "id": "fish",
       "label": "Fischgerichte",
-      "image": "/design/b2bddc1f9b710706cbd4f92c13eabdfad81a490c.png"
+      "image": "/design/fish.jpg"
     },
     {
       "id": "vegetarian",
