@@ -44,6 +44,7 @@ export default function HomePage() {
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
   const pointerDelta = useRef<{ dx: number; dy: number }>({ dx: 0, dy: 0 });
   const [dragOffset, setDragOffset] = useState(0);
+  const scrollAreaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (cueIndex === null) return;
@@ -172,6 +173,13 @@ export default function HomePage() {
 
   const categoryCards = categoryItems[activeTab];
 
+  // Always jump the scrollable grid back to the top when switching tab/category
+  useEffect(() => {
+    if (scrollAreaRef.current) {
+      scrollAreaRef.current.scrollTo({ top: 0, behavior: "auto" });
+    }
+  }, [activeTab, selectedCategory]);
+
   return (
     <div className="flex h-full min-h-0 flex-col space-y-4 overflow-hidden">
       <header className="flex items-center gap-2">
@@ -254,7 +262,10 @@ export default function HomePage() {
         )}
 
         {/* Category or item grid */}
-        <section className="grid min-h-0 flex-1 grid-cols-2 gap-3 overflow-y-auto pb-4">
+        <section
+          ref={scrollAreaRef}
+          className="grid min-h-0 flex-1 grid-cols-2 gap-3 overflow-y-auto pb-4"
+        >
           {!selectedCategory &&
             categoryCards.map((cat) => (
               <article
