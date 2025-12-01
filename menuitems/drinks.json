@@ -788,7 +788,9 @@
     "description": "Bottled beer",
     "hiddenDescription": "Balanced lager.",
     "price": 3.8,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1641848606024-a5c2ca7ef87c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxCZWNrJUUyJTgwJTk5cyUyMGRyaW5rfGVufDB8fHx8MTc2NDU0MTExM3ww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.3,
     "categories": [
       "beer-bottle"
@@ -1039,7 +1041,9 @@
     "description": "Pinot noir",
     "hiddenDescription": "Red berries, light tannin.",
     "price": 6.2,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1572360678011-4779209631b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxEb3JuZmVsZGVyfGVufDB8fHx8MTc2NDU3NDk2Mnww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "wine-red"
@@ -1327,7 +1331,9 @@
     "description": "Fruit brandy",
     "hiddenDescription": "Apple/pear schnaps.",
     "price": 4,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1613255347968-aa2aaa353976?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxWb2RrYXxlbnwwfHx8fDE3NjQ1NzQ5Njh8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.2,
     "categories": [
       "spirits"

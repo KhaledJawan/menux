@@ -81,7 +81,9 @@
     "description": "Grilled vegetable platter",
     "hiddenDescription": "Marinated seasonal veggies.",
     "price": 9,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxCcnVzY2hldHRhfGVufDB8fHx8MTc2NDU3NDk3OHww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "vorspeisen"
@@ -205,7 +207,9 @@
     "description": "Mascarpone, espresso, cocoa",
     "hiddenDescription": "Italian classic.",
     "price": 6.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.7,
     "categories": [
       "nachspeisen",
@@ -222,7 +226,9 @@
     "description": "Warm chocolate cake",
     "hiddenDescription": "Molten center.",
     "price": 6,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1565815967314-5187f844fd2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxTY2hva29rdWNoZW4lMjAlMjh3YXJtJTI5fGVufDB8fHx8MTc2NDU3OTY5NHww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -239,7 +245,9 @@
     "description": "Apple strudel",
     "hiddenDescription": "Vanilla sauce.",
     "price": 6,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1657313938000-23c4322dbe22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxBcGZlbHN0cnVkZWx8ZW58MHx8fHwxNzY0NTc5Njk1fDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -256,7 +264,9 @@
     "description": "Cheesecake slice",
     "hiddenDescription": "Creamy baked.",
     "price": 5.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -273,7 +283,9 @@
     "description": "Creamy panna cotta",
     "hiddenDescription": "Berry coulis.",
     "price": 6,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxQYW5uYSUyMENvdHRhfGVufDB8fHx8MTc2NDU3OTY5N3ww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "nachspeisen"
@@ -289,7 +301,9 @@
     "description": "Vanille, Schokolade, Erdbeere",
     "hiddenDescription": "Ice cream trio.",
     "price": 5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "nachspeisen",
@@ -306,7 +320,9 @@
     "description": "Waffle with ice cream",
     "hiddenDescription": "Whipped cream.",
     "price": 6.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "nachspeisen",
@@ -323,7 +339,9 @@
     "description": "Caramelized custard",
     "hiddenDescription": "Vanilla bean.",
     "price": 6.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1676300184943-09b2a08319a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDciVDMyVBOG1lJTIwQnIlQzMlQkJsJUMzJUE5ZXxlbnwwfHx8fDE3NjQ1Nzk3MDR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "nachspeisen"
@@ -339,7 +357,9 @@
     "description": "Fresh fruit salad",
     "hiddenDescription": "Seasonal mix.",
     "price": 5.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1658431618300-a69b07fb5782?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxPYnN0c2FsYXR8ZW58MHx8fHwxNzY0NTc5NzA1fDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.4,
     "categories": [
       "nachspeisen"

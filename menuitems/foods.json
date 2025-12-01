@@ -81,7 +81,9 @@
     "description": "Grilled vegetables platter",
     "hiddenDescription": "Marinated seasonal veggies.",
     "price": 9,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxCcnVzY2hldHRhfGVufDB8fHx8MTc2NDU3NDk3OHww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "appetizers"
@@ -295,7 +297,9 @@
     "description": "Farmer’s salad",
     "hiddenDescription": "Tomato, cucumber, feta.",
     "price": 9,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1546793665-c74683f339c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDYWVzYXIlMjBTYWxhZHxlbnwwfHx8fDE3NjQ1NzQ5ODd8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "salads"
@@ -681,7 +685,9 @@
     "description": "Salmon pasta",
     "hiddenDescription": "Creamy dill sauce.",
     "price": 13.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxTcGFnaGV0dGklMjBCb2xvZ25lc2V8ZW58MHx8fHwxNzY0NTc4MTkwfDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.7,
     "categories": [
       "pasta",
@@ -771,7 +777,9 @@
     "description": "Beef steak",
     "hiddenDescription": "Grilled to order.",
     "price": 18.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxTcGFnaGV0dGklMjBCb2xvZ25lc2V8ZW58MHx8fHwxNzY0NTc4MTkwfDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.8,
     "categories": [
       "meat"
@@ -949,7 +957,9 @@
     "description": "Seared pike-perch",
     "hiddenDescription": "Lemon butter.",
     "price": 16.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1678726143327-cb1ff4b1c35a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxQaXp6YSUyMFRvbm5vfGVufDB8fHx8MTc2NDU3ODE4NXww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "fish"
@@ -1096,7 +1106,9 @@
     "description": "Cheese spaetzle",
     "hiddenDescription": "Caramelized onions.",
     "price": 11,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxQaXp6YSUyME1hcmdoZXJpdGF8ZW58MHx8fHwxNzY0NTc4MTgzfDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "vegetarian"
@@ -1257,7 +1269,9 @@
     "description": "Potato salad",
     "hiddenDescription": "Herbs and vinegar.",
     "price": 4.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1593895648796-9139c6bee45c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxLYXJ0b2ZmZWxzYWxhdHxlbnwwfHx8fDE3NjQ1Nzk2OTB8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.4,
     "categories": [
       "sides"
@@ -1273,7 +1287,9 @@
     "description": "Fried potatoes",
     "hiddenDescription": "Onions and herbs.",
     "price": 5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1508313880080-c4bef0730395?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxCcmF0a2FydG9mZmVsbnxlbnwwfHx8fDE3NjQ1Nzk2OTF8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.4,
     "categories": [
       "sides"
@@ -1289,7 +1305,9 @@
     "description": "Steamed rice",
     "hiddenDescription": "Fluffy grains.",
     "price": 3.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxSZWlzfGVufDB8fHx8MTc2NDU3OTY5Mnww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.3,
     "categories": [
       "sides"
@@ -1305,7 +1323,9 @@
     "description": "Potato dumplings",
     "hiddenDescription": "Traditional side.",
     "price": 4.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1726514733355-02fe48ae6795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxLYXJ0b2ZmZWxrbiVDMyVCNmRlbHxlbnwwfHx8fDE3NjQ1Nzk2OTN8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.4,
     "categories": [
       "sides"
@@ -1321,7 +1341,9 @@
     "description": "Steamed vegetables",
     "hiddenDescription": "Lightly seasoned.",
     "price": 4.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxHZW0lQzMlQkNzZXxlbnwwfHx8fDE3NjQ1Nzk2OTN8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.3,
     "categories": [
       "sides",
@@ -1339,7 +1361,9 @@
     "description": "Mascarpone, espresso, cocoa",
     "hiddenDescription": "Classic Italian dessert.",
     "price": 6.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.7,
     "categories": [
       "desserts"
@@ -1355,7 +1379,9 @@
     "description": "Warm chocolate cake",
     "hiddenDescription": "Molten center.",
     "price": 6,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1565815967314-5187f844fd2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxTY2hva29rdWNoZW4lMjAlMjh3YXJtJTI5fGVufDB8fHx8MTc2NDU3OTY5NHww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1371,7 +1397,9 @@
     "description": "Apple strudel",
     "hiddenDescription": "Vanilla sauce.",
     "price": 6,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1657313938000-23c4322dbe22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxBcGZlbHN0cnVkZWx8ZW58MHx8fHwxNzY0NTc5Njk1fDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1387,7 +1415,9 @@
     "description": "Cheesecake",
     "hiddenDescription": "Creamy classic.",
     "price": 5.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1403,7 +1433,9 @@
     "description": "Creamy panna cotta",
     "hiddenDescription": "Berry coulis.",
     "price": 6,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxQYW5uYSUyMENvdHRhfGVufDB8fHx8MTc2NDU3OTY5N3ww&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "desserts"
@@ -1419,7 +1451,9 @@
     "description": "Vanilla, chocolate, strawberry",
     "hiddenDescription": "Ice cream trio.",
     "price": 5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "desserts"
@@ -1435,7 +1469,9 @@
     "description": "Waffle with ice cream",
     "hiddenDescription": "Whipped cream.",
     "price": 6.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxUaXJhbWlzdXxlbnwwfHx8fDE3NjQ1Nzk2OTR8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "desserts"
@@ -1451,7 +1487,9 @@
     "description": "Kid’s pizza",
     "hiddenDescription": "Small margherita.",
     "price": 7,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1598610089864-f19b4ff743a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxLaW5kZXItUGl6emF8ZW58MHx8fHwxNzY0NTc5Njk5fDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.6,
     "categories": [
       "kids",
@@ -1468,7 +1506,9 @@
     "description": "Kids nuggets and fries",
     "hiddenDescription": "Ketchup dip.",
     "price": 7.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1602585259981-7b66eea9aa6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxDaGlja2VuJTIwTnVnZ2V0cyUyMCUyQiUyMFBvbW1lc3xlbnwwfHx8fDE3NjQ1Nzk2OTl8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "kids"
@@ -1484,7 +1524,9 @@
     "description": "Kid’s schnitzel",
     "hiddenDescription": "Served with fries.",
     "price": 7.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1604699799317-40110abd3e5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNaW5pLVNjaG5pdHplbHxlbnwwfHx8fDE3NjQ1Nzk3MDB8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "kids"
@@ -1500,7 +1542,9 @@
     "description": "Kids pasta tomato sauce",
     "hiddenDescription": "Parmesan on side.",
     "price": 7,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1603220026645-e0fdf221b1e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxQYXN0YSUyMG1pdCUyMFRvbWF0ZW5zbyVDMyU5RmV8ZW58MHx8fHwxNzY0NTc5NzAwfDA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "kids",
@@ -1517,7 +1561,9 @@
     "description": "Kid’s burger",
     "hiddenDescription": "Beef patty, cheese.",
     "price": 7.5,
-    "photos": [],
+    "photos": [
+      "https://images.unsplash.com/photo-1603835571442-77cc71581b98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4Mzc3Njl8MHwxfHNlYXJjaHwxfHxNaW5pLUJ1cmdlcnxlbnwwfHx8fDE3NjQ1Nzk3MDF8MA&ixlib=rb-4.1.0&q=80&w=400"
+    ],
     "rate": 4.5,
     "categories": [
       "kids",
